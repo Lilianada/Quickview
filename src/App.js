@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdMenu } from "react-icons/md";
@@ -82,6 +82,38 @@ const App = () => {
   const [activeSection, setActiveSection] = useState('about');
   const [currentTheme, setCurrentTheme] = useState('default');
 
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '-50% 0px', 
+      threshold: 0 
+    };
+
+    const callback = (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+
+    navSections.forEach(section => {
+      const element = document.getElementById(section.id);
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setActiveSection(sectionId);
+    }
+  };
   const themes = Object.keys(themeConfig);
 
   const navSections = [
@@ -424,12 +456,17 @@ const App = () => {
               <div
                 key={section.id}
                 className={`${theme.primaryText} cursor-pointer flex items-center group
-                    ${activeSection === section.id
-                    ? 'opacity-100'
-                    : 'opacity-30 hover:opacity-60'}`}
-                onClick={() => setActiveSection(section.id)}
+                  ${activeSection === section.id ? 'opacity-100' : 'opacity-30 hover:opacity-60'}`}
+                onClick={() => scrollToSection(section.id)}
               >
-                <span className="text-sm">0{index + 1} <hr className={`inline-block w-8 h-[3px] mx-2`} /></span>
+                <span className="text-sm">0{index + 1}</span>
+                <span className="mx-2 pb-2 inline-block transition-all duration-300">
+                  <span 
+                    className={`inline-block h-[1.5px] bg-current transition-all duration-300 ${
+                      activeSection === section.id ? 'w-12' : 'w-8'
+                    }`}
+                  />
+                </span>
                 <span className="font-medium">{section.label}</span>
               </div>
             ))}
@@ -443,9 +480,9 @@ const App = () => {
           </div>
         </div>
 
-        <div className={`${theme.background === 'bg-[#242424]' ? `bg-[#242424]` : 'bg-[#ffffff]'}
-          ${theme.secondaryText} w-[60%] overflow-y-auto p-8`}>
-          <section className="mb-12">
+        <div className={`${theme.background === 'bg-[#242424]' ? 'bg-[#242424]' : 'bg-[#ffffff]'}
+            ${theme.secondaryText} w-[60%] overflow-y-auto p-8 scroll-smooth`}>
+          <section id="about" className="mb-12 min-h-screen">
             <div className="mb-8">
               <h1 className={`${theme.primaryText} text-[70px] font-[900] leading-[70px] w-1/2`}>I'm a Self-taught developer.</h1>
               <div className={`text-sm flex justify-end my-8 ${theme.secondaryText}`}>
@@ -466,7 +503,7 @@ const App = () => {
             </div>
           </section>
 
-          <section className="my-12">
+          <section id="experience" className="my-12 min-h-screen">
             <h2 className={`${theme.primaryText} text-[70px] font-[900] leading-[70px] w-1/2 mb-24`}><span className={`${theme.primaryText}`}>4 years </span><span className='opacity-50'>of experience</span> </h2>
             {experiences.map((exp, index) => (
               <div
@@ -483,7 +520,7 @@ const App = () => {
             ))}
           </section>
 
-          <section>
+          <section id="project" className='min-h-screen'>
             <div className='flex justify-end'>
               <h2 className={`${theme.primaryText} text-[70px] font-[900] leading-[70px] w-1/3 mb-24`}><span className='opacity-50'>My </span><span className={`${theme.primaryText}`}>Projects</span> </h2>
             </div>
@@ -515,7 +552,7 @@ const App = () => {
             ))}
           </section>
 
-          <section className="my-12">
+          <section id="stack" className="my-12 min-h-screen">
             <div className=''>
               <h2 className={`${theme.primaryText} text-[70px] font-[900] leading-[70px] w-1/3 mb-24`}><span className='opacity-50'>My </span><span className={`${theme.primaryText}`}>Stack</span> </h2>
             </div>
@@ -547,7 +584,7 @@ const App = () => {
             ))}
           </section>
 
-          <section>
+          <section id="now" className='min-h-screen'>
             <div className=''>
               <h2 className={`${theme.primaryText} text-[70px] font-[900] leading-[70px] w-1/3 mb-24`}><span className='opacity-50'>Now </span> </h2>
             </div>
@@ -624,7 +661,7 @@ const App = () => {
             </motion.div>
           </section>
 
-          <section className="my-12">
+          <section id="contact" className="my-12">
             <div className=''>
               <h2 className={`${theme.primaryText} text-[70px] font-[900] leading-[70px] w-1/3 mb-24`}><span className='opacity-50'>Contact </span></h2>
             </div>
