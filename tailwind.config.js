@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        nerko: ['nerko_oneregular', 'cursive'],
+        nerko: ['nerko_oneregular', 'sans-serif'],
+        monaSans: ['mona-sans', 'sans-serif'],
       },
     },
   },
