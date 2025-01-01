@@ -17,7 +17,16 @@
     font-weight: normal;
     font-style: normal;
   }
+}
 
+.container {
+  overflow: auto; 
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.container::-webkit-scrollbar {
+  display: none; 
 }
 
 

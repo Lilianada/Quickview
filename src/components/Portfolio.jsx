@@ -391,8 +391,10 @@ const Portfolio = () => {
           className={`bg-${
             theme.background === "#242424" ? `[#242424]` : "[#ffffff]"
           }
-            w-[50%] overflow-y-auto p-8 scroll-smooth`}
-          style={{ color: theme.secondaryText }}
+            w-[50%] overflow-y-auto p-8 scroll-smooth container`}
+          style={{ 
+            color: theme.secondaryText
+          }}
         >
           <section id="desktop-about" className="mb-12 min-h-screen">
             <div className="mb-8">
