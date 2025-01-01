@@ -13,7 +13,7 @@ const ThemeToggleButton = () => {
 
   return (
     <div
-      className={`fixed bottom-4 right-4 lg:relative ${
+      className={`fixed bottom-4 right-4 lg:left-4 ${
         expanded ? "h-[290px]" : "h-12"
       } w-12 overflow-hidden transition-all duration-300 ease-in-out`}
       onMouseEnter={() => setExpanded(true)}
@@ -25,7 +25,7 @@ const ThemeToggleButton = () => {
       }}
     >
       <div
-        className={`w-full h-full rounded-full transition-all duration-300 ${
+        className={`w-full h-full rounded-full backdrop-blur-md ${
           expanded ? "py-1.5" : "py-0"
         } `}
         style={{
