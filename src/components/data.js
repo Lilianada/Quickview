@@ -101,57 +101,78 @@ export const themeConfig = {
     default: {
         background: '[#242424]',
         primaryText: '[#FFFFFF]',
-        secondaryText: '[#D1D1D6]',
+        secondaryText: '[rgba(209, 209, 214, 1)]',
         accent: '[#F5BF6A]',
         card: '[#2E2E2E]'
     },
+    darkCyan: {
+        background: '[#051a1c]',
+        primaryText: '[#c3ebf1]',
+        secondaryText: '[rgba(183, 212, 245, 0.4)]',
+        accent: '[#164E63]',
+        card: '[#CFFAFE]'
+    },
+    oceanDusk: {
+        background: '[#182938]',
+        primaryText: '[#b7d4f5]',
+        secondaryText: '[rgba(183, 212, 245, 0.01)]',
+        accent: '[rgba(242, 195, 164, 0.12)]',
+        card: '[#182938]'
+    },
+    twilightLavender: {
+        background: '[#2e3248]',
+        primaryText: '[#cfbcec]',
+        secondaryText: '[rgba(154, 109, 223, 0.5)]',
+        accent: '[#673AB7]',
+        card: '[#3F3B4D]'
+    },
+    pastelRose: {
+        background: '[#40364f]',
+        primaryText: '[#f8a6d3]',
+        secondaryText: '[rgba(211, 153, 186, 0.6)]',
+        accent: '[#F17EB1]',
+        card: '[#574F6D]'
+    },
+    royalBlush: {
+        background: '[#5543c5]',
+        primaryText: '[#ffb1b1]',
+        secondaryText: '[rgba(255, 177, 177, 0.3)]',
+        accent: '[#FF8080]',
+        card: '[#6E57CF]'
+    },
+    peachCream: {
+        background: '[#ffd2b4]',
+        primaryText: '[#e94f0e]',
+        secondaryText: '[rgba(233, 79, 14, 0.15)]',
+        accent: '[#FF8C42]',
+        card: '[#FFE6D0]'
+    },
+    vintageBeige: {
+        background: '[#f3e6cf]',
+        primaryText: '[#774e34]',
+        secondaryText: '[rgba(119, 78, 52, 0.25)]',
+        accent: '[#D9A066]',
+        card: '[#F6EDD6]'
+    },
+    iceBlue: {
+        background: '[#deebee]',
+        primaryText: '[#1e282a]',
+        secondaryText: '[rgba(46, 62, 64, 0.5)]',
+        accent: '[#4A7078]',
+        card: '[#E3F2F5]'
+    },
+    frostedGlass: {
+        background: '[#f2fbfd]',
+        primaryText: '[#12191a]',
+        secondaryText: '[rgba(18, 25, 26, 0.3)]',
+        accent: '[#5D7F81]',
+        card: '[#F0FCFE]'
+    },
     light: {
-        background: '[#FCFCFC]',
-        primaryText: '[#18181B]',
-        secondaryText: '[#52525B]',
+        background: '[#ffffff]',
+        primaryText: '[#000000]',
+        secondaryText: '[rgba(82, 82, 91, 0.5)]',
         accent: '[#D94A1F]',
         card: '[#F8F8F8]'
-    },
-    violet: {
-        background: '[#F8F8F8]',
-        primaryText: '[#5B21B6]',
-        secondaryText: '[#7C3AED]',
-        accent: '[#491C96]',
-        card: '[#EDE9FE]'
-    },
-    cyan: {
-        background: '[#ECFEFF]',
-        primaryText: '[#0E7090]',
-        secondaryText: '[#06AED4]',
-        accent: '#164E63',
-        card: '#CFFAFE'
-    },
-    fushia: {
-        background: '[#FBE8FF]',
-        primaryText: '[#86198F]',
-        secondaryText: '[#D946EF]',
-        accent: '[#701A75]',
-        card: '[#FAE8FF]'
-    },
-    green: {
-        background: '[#D3F8DF]',
-        primaryText: '[#047857]',
-        secondaryText: '[#10B981]',
-        accent: '[#065F46]',
-        card: '[#D1FAE5]'
-    },
-    darkBlue: {
-        background: '[#D1E0FF]',
-        primaryText: '[#1E40AF]',
-        secondaryText: '[#3B82F6]',
-        accent: '[#1E3A8A]',
-        card: '[#DBEAFE]'
-    },
-    darkOrange: {
-        background: '[#FFE6D5]',
-        primaryText: '[#9A3412]',
-        secondaryText: '[#F97316]',
-        accent: '[#7C2D12]',
-        card: '[#FFEDD5]'
     },
 };
