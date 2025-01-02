@@ -12,7 +12,7 @@ const Portfolio = () => {
     <div
       className={`${
         theme.background === "#242424" ? `bg-[#242424]` : `bg-[#ffffff]`
-      } min-h-screen transition-colors duration-300 font-monaSans
+      } min-h-screen transition-colors duration-300 font-grotesk
     `}
     >
       <div className="lg:hidden">
@@ -25,6 +25,8 @@ const Portfolio = () => {
           style={{ color: theme.secondaryText }}
         >
           <Header />
+          {/* Break this page down, remove 'about', 'stack', 'project', 'now', 'experience', and 'contact' from this page into their own separate pages, the desktop and the mobile view should be together in a page' */}
+
           <section
             id="about"
             initial={{ opacity: 0, y: 20 }}
@@ -33,7 +35,7 @@ const Portfolio = () => {
             className="mb-16"
           >
             <h1
-              className={`text-[36px] leading-[50px] font-[900] mb-4`}
+              className={`text-[36px] leading-[50px] font-[700] mb-4`}
               style={{ color: theme.primaryText }}
             >
               I'm a Self-taught developer.
@@ -77,6 +79,7 @@ const Portfolio = () => {
                 className="rounded-full w-12 h-12"
               />
               <div className="flex space-x-3">
+                {/* Use react-dom */}
                 <a href="#" className="flex items-center gap-1 text-sm">
                   <FaGithub size={20} />
                   GitHub
@@ -381,8 +384,11 @@ const Portfolio = () => {
       <div className="hidden lg:flex h-screen overflow-hidden">
         <div
           className={`w-[20%] p-8 `}
-          style={{ 
-            backgroundColor: theme.background === "#242424" ? "#2E2E2E" : `${theme.background}`,
+          style={{
+            backgroundColor:
+              theme.background === "#242424"
+                ? "#2E2E2E"
+                : `${theme.background}`,
           }}
         >
           <Header />
@@ -392,46 +398,45 @@ const Portfolio = () => {
             theme.background === "#242424" ? `[#242424]` : "[#ffffff]"
           }
             w-[50%] overflow-y-auto p-8 scroll-smooth container`}
-          style={{ 
-            color: theme.secondaryText
+          style={{
+            color: theme.secondaryText,
           }}
         >
           <section id="desktop-about" className="mb-12 min-h-screen">
             <div className="mb-8">
               <h1
-                className={`text-[70px] font-[900] leading-[70px] w-1/2`}
+                className={`text-[70px] font-[700] leading-[70px] w-1/2`}
                 style={{ color: theme.primaryText }}
               >
-                I'm a Self-taught developer.
+                I'm a Product Manager.
               </h1>
-              <div className={`text-sm flex justify-end my-8`}>
+              <div className={`text-base text-justify flex justify-end my-8`}>
                 <p className="w-1/2">
-                  Specializing in frontend development using{" "}
-                  <span style={{ color: theme.accent }}> React.js</span> and{" "}
-                  <span style={{ color: theme.accent }}> Next.js</span>. I also
-                  have experience using backend technologies like{" "}
+                  Having spent over four years as a MERN Stack Developer, I
+                  transitioned into{" "}
                   <span style={{ color: theme.accent }}>
-                    Node.js, Express.js
+                    Product Management
                   </span>
-                  , and <span style={{ color: theme.accent }}>MongoDB</span>.
-                  Alongside my development skills, I have a keen eye for design
-                  which allows me to build visually appealing interfaces.
+                  , where I now specialize in managing the design and
+                  development of digital solutions and experiences.
                 </p>
               </div>
-              <div className={`text-sm flex my-8`}>
-                <p className="w-1/2 text-left">
-                  I currently work at Supreme Marketing Limited, a software
-                  development and marketing company where I lead the development
-                  team to building tailor made solutions for businesses and
-                  organizations.
+
+              <div className={`text-base flex my-8`}>
+                <p className="w-1/2 text-justify">
+                  Currently, I work at Building Bloques Creative Studio, a
+                  digital and visual studio where I lead the development team as
+                  a Product Manager. We focus on crafting tailored solutions for
+                  a diverse range of brands and businesses, creating exceptional
+                  experiences through the digital products we design and build.
+                  
                 </p>
               </div>
-              <div className={`text-sm flex justify-end my-8 text-left`}>
+              <div className={`text-base flex justify-end my-8 text-left`}>
                 <p className="w-1/2">
-                  I currently work at Supreme Marketing Limited, a software
-                  development and marketing company where I lead the development
-                  team to building tailor made solutions for businesses and
-                  organizations.
+                  When I’m not coding or exploring new designs, I am at the gym
+                  hitting new PRs and on Instagram encouraging women in to becoming the fittest 
+                  versions of themselves.
                 </p>
               </div>
             </div>
