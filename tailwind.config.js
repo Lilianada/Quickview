@@ -7,7 +7,6 @@ module.exports = {
     extend: {
       fontFamily: {
         nerko: ['nerko_oneregular', 'sans-serif'],
-        monaSans: ['mona-sans', 'sans-serif'],
         grotesk: ['Schibsted Grotesk', 'serif', 'sans-serif']
       },
     },
