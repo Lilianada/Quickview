@@ -44,6 +44,7 @@ const Projects = () => {
         </div>
         {projects.map((project, index) => (
           <div
+            key={index}
             className={` mb-6 rounded-lg w-full p-5 gap-4`}
             style={{ color: theme.secondaryText }}
           >

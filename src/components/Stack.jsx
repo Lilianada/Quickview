@@ -40,21 +40,18 @@ const Stack = () => {
           </div>
         ))}
       </div>
-      <div id="stack" className="hidden lg:flex flex-col">
-        <h2
-          className={`text-[20px] leading-[36px] font-semibold mb-12 text-right`}
-        >
-          <span className="opacity-70">My </span>
-          <span style={{ color: theme.primaryText }}>Stack</span>{" "}
-        </h2>
+      <div id="desktop-stack" className="my-12 min-h-screen hidden lg:flex flex-col">
+        <div className="">
+          <h2 className={`text-[70px] font-[900] leading-[70px] w-1/3 mb-24`}>
+            <span className="opacity-70">My </span>
+            <span style={{ color: theme.primaryText }}>Stack</span>{" "}
+          </h2>
+        </div>
         {stacks.map((stack, index) => (
           <div
             key={index}
             className={`flex mb-6 rounded-lg w-full p-5 gap-4`}
-            style={{
-              color: theme.secondaryText,
-              backgroundColor: theme.card,
-            }}
+            style={{ color: theme.secondaryText, background: theme.card }}
           >
             <div className=" w-1/5 rounded-full">
               <img
