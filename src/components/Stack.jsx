@@ -6,9 +6,9 @@ const Stack = () => {
   const { theme } = useTheme();
   return (
     <section>
-      <div id="stack" className="lg:hidden">
+      <div id="stack" className="lg:my-12 lg:min-h-screen">
         <h2
-          className={`text-[20px] leading-[36px] font-semibold mb-12 text-right`}
+          className={`text-[20px] leading-[36px] font-semibold mb-12 text-right lg:text-[70px] lg:font-[900] lg:leading-[70px] lg:w-1/3 lg:mb-24`}
         >
           <span className="opacity-70">My </span>
           <span style={{ color: theme.primaryText }}>Stack</span>{" "}
@@ -16,50 +16,19 @@ const Stack = () => {
         {stacks.map((stack, index) => (
           <div
             key={index}
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: index * 0.2 }}
             className={`flex mb-6 rounded-lg w-full p-5 gap-4`}
             style={{
               color: theme.secondaryText,
               backgroundColor: theme.card,
             }}
           >
-            <div className=" w-1/5 rounded-full">
-              <img
-                src={stack.image}
-                alt={stack.name}
-                className="w-full object-cover rounded-full"
-              />
-            </div>
-            <div className="w-4/5">
-              <h3 className="font-bold text-lg">{stack.name}</h3>
-              <span className="text-xs rounded opacity-70">{stack.tags}</span>
-              <p className="text-sm mt-4 opacity-70">{stack.description}</p>
-            </div>
+            <div className="bg-white p-2 rounded-full h-16 w-16 flex items-center justify-center">
+            <img
+              src={stack.image}
+              alt={stack.name}
+              className="h-10 w-10 object-cover rounded-full"
+            />
           </div>
-        ))}
-      </div>
-      <div id="desktop-stack" className="my-12 min-h-screen hidden lg:flex flex-col">
-        <div className="">
-          <h2 className={`text-[70px] font-[900] leading-[70px] w-1/3 mb-24`}>
-            <span className="opacity-70">My </span>
-            <span style={{ color: theme.primaryText }}>Stack</span>{" "}
-          </h2>
-        </div>
-        {stacks.map((stack, index) => (
-          <div
-            key={index}
-            className={`flex mb-6 rounded-lg w-full p-5 gap-4`}
-            style={{ color: theme.secondaryText, background: theme.card }}
-          >
-            <div className=" w-1/5 rounded-full">
-              <img
-                src={stack.image}
-                alt={stack.name}
-                className="w-full object-cover rounded-full"
-              />
-            </div>
             <div className="w-4/5">
               <h3 className="font-bold text-lg">{stack.name}</h3>
               <span className="text-xs rounded opacity-70">{stack.tags}</span>

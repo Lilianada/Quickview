@@ -57,25 +57,25 @@ export const stacks = [
         name: 'Next Js',
         tags: 'Javascript Framework',
         description: 'Next.js is an open-source web development framework created by the private company Vercel providing React',
-        image: '/image/profile-photo.jpeg'
+        image: '/image/nextjs-logo.png'
     },
     {
-        name: 'Next Js',
+        name: 'Express Js',
         tags: 'Javascript Framework',
-        description: 'Next.js is an open-source web development framework created by the private company Vercel providing React',
-        image: '/image/profile-photo.jpeg'
+        description: 'Express.js, or simply Express, is a back end web application framework for building RESTful APIs with Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs.',
+        image: '/image/expressjs-logo.png'
     },
     {
-        name: 'Next Js',
+        name: 'Node Js',
         tags: 'Javascript Framework',
-        description: 'Next.js is an open-source web development framework created by the private company Vercel providing React',
-        image: '/image/profile-photo.jpeg'
+        description: 'Node.js is a cross-platform, open-source JavaScript runtime environment that can run on Windows, Linux, Unix, macOS, and more. Node.js runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser.',
+        image: '/image/nodejs-logo.png'
     },
     {
-        name: 'Next Js',
+        name: 'React Js',
         tags: 'Javascript Framework',
-        description: 'Next.js is an open-source web development framework created by the private company Vercel providing React',
-        image: '/image/profile-photo.jpeg'
+        description: 'React is a free and open-source front-end JavaScript library that aims to make building user interfaces based on components more "seamless". It is maintained by Meta and a community of individual developers and companies.',
+        image: '/image/reactjs-logo.png'
     }
 ];
 
