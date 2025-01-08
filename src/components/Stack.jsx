@@ -23,12 +23,12 @@ const Stack = () => {
             }}
           >
             <div className="bg-white p-2 rounded-full h-16 w-16 flex items-center justify-center">
-            <img
-              src={stack.image}
-              alt={stack.name}
-              className="h-10 w-10 object-cover rounded-full"
-            />
-          </div>
+              <img
+                src={stack.image}
+                alt={stack.name}
+                className="h-10 w-10 object-cover rounded-full"
+              />
+            </div>
             <div className="w-4/5">
               <h3 className="font-bold text-lg">{stack.name}</h3>
               <span className="text-xs rounded opacity-70">{stack.tags}</span>

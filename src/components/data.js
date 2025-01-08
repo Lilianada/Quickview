@@ -30,25 +30,25 @@ export const projects = [
         name: 'Colouring Cultures',
         tags: 'E-Commerce',
         description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.',
-        image: '/image/profile-photo.jpeg'
+        image: '/image/project-screenshot1.png'
     },
     {
         name: 'Colouring Cultures',
         tags: 'E-Commerce',
         description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.',
-        image: '/image/profile-photo.jpeg'
+        image: '/image/project-screenshot2.jpeg'
     },
     {
         name: 'Colouring Cultures',
         tags: 'E-Commerce',
         description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.',
-        image: '/image/profile-photo.jpeg'
+        image: '/image/project-screenshot3.png'
     },
     {
         name: 'Colouring Cultures',
         tags: 'E-Commerce',
         description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.',
-        image: '/image/profile-photo.jpeg'
+        image: '/image/project-screenshot4.png'
     }
 ];
 
