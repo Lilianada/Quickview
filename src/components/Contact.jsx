@@ -5,17 +5,17 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 const Contact = () => {
   const { theme } = useTheme();
   return (
-    <section className="hidden lg:flex flex-col">
-      <div id="desktop-contact" className="mt-12">
+    <section className="hidden lg:flex flex-col" >
+      <div id="desktop-contact" className="mt-10">
         <div className="">
           <h2
-            className={`text-[70px] font-[900] leading-[70px] w-1/3 mb-24`}
-            style={{ color: theme.primaryText }}
+            className={`text-[70px] font-[900] leading-[70px] w-1/3 mb-5`}
+            
           >
             Contact
           </h2>
         </div>
-        <div className="space-y-5">
+        <div className="space-y-5 text-sm">
           <span className="flex items-center gap-2">
             <p className="shrink-0">Email</p>
             <span className="flex-grow">

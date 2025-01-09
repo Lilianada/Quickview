@@ -10,13 +10,12 @@ const Experience = () => {
       <div
         id="experience"
         className="mb-16 lg:my-12 lg:mb-0 lg:min-h-screen"
-        style={{ color: theme.primaryText }}
       >
         <h2
-          className={`text-[20px] leading-[36px] font-semibold mb-12 text-right lg:text-[70px] lg:font-[900] lg:leading-[70px] lg:w-1/2 lg:mb-24`}
+          className={`text-[20px] leading-[36px] font-semibold mb-12 text-right lg:text-[70px] lg:font-[900] lg:leading-[70px] lg:w-3/4 ml-auto`}
         >
           <span>4 years </span>
-          <span className="opacity-80">of experience</span>{" "}
+          <span className="opacity-70">of experience</span>{" "}
         </h2>
         {experiences.map((exp, index) => (
           <div
@@ -31,18 +30,16 @@ const Experience = () => {
               <h3 className="font-semibold text-[20px] leading-6">
                 {exp.company}
               </h3>
-              <p className="text-sm">{exp.role}</p>
-              <p className="text-xs">{exp.description}</p>
+              <p className="text-xs opacity-80">{exp.role}</p>
+              <p className=" opacity-80">{exp.description}</p>
             </div>
             <p
-              className="my-2 leading-4 text-[12px] lg:hidden"
-              style={{ color: theme.secondaryText }}
+              className="my-3 leading-4 text-xs lg:hidden opacity-80"
             >
               {exp.role}
             </p>
             <p
-              className="lg:hidden text-[12px] leading-6"
-              style={{ color: theme.secondaryText }}
+              className="lg:hidden text-sm leading-6 opacity-80"
             >
               {exp.description}
             </p>

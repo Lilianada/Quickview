@@ -13,26 +13,17 @@ const Portfolio = () => {
   const { theme } = useTheme();
   return (
     <div
-      className={`${
-        theme.background === "#242424" ? `bg-[#242424]` : `bg-[#ffffff]`
-      } min-h-screen transition-colors duration-300 font-grotesk
-    `}
+      className="min-h-screen transition-colors duration-300 font-grotesk"
+      style={{ color: theme.primaryText, backgroundColor: theme.background }}
     >
       <div className="lg:hidden">
-        <div
-          className={`
-          min-h-screen p-4 max-w-2xl mx-auto ${
-            theme.background === "#242424" ? `bg-[#242424]` : "bg-[#ffffff]"
-          }
-        `}
-          style={{ color: theme.secondaryText }}
-        >
+        <div className="min-h-screen p-4 max-w-2xl mx-auto">
           <Header />
           <About />
           <Experience />
           <Projects />
           <Stack />
-          <Now /> 
+          <Now />
           <ThemeToggleButton />
         </div>
       </div>
@@ -43,27 +34,24 @@ const Portfolio = () => {
           className={`w-[20%] p-8 `}
           style={{
             backgroundColor:
-              theme.background === "#242424"
-                ? "#2E2E2E"
-                : `${theme.background}`,
+              theme.background === "#242424" ? "#2E2E2E" : `${theme.card}`,
           }}
         >
           <Header />
         </div>
         <div
-          className={`bg-${
-            theme.background === "#242424" ? `[#242424]` : "[#ffffff]"
-          }
-            w-[50%] overflow-y-auto p-8 scroll-smooth container`}
+          className="w-[50%] overflow-y-auto p-8 scroll-smooth container"
           style={{
-            color: theme.secondaryText,
+            backgroundColor:
+              theme.background === "#242424" ? "#242424" : theme.background,
+            color: theme.primaryText,
           }}
         >
           <About />
           <Experience />
           <Projects />
           <Stack />
-          <Now /> 
+          <Now />
           <Contact />
         </div>
 
@@ -75,26 +63,33 @@ const Portfolio = () => {
               className="object-cover h-full w-full absolute top-0 left-0 opacity-80"
             />
             <div
-              className={`absolute inset-0 mix-blend-color 
-        ${
-          theme.secondaryText === "[#D1D1D6]"
-            ? "bg-[#D1D1D6]"
-            : theme.secondaryText === "[#52525B]"
-            ? "bg-[#52525B]/40"
-            : theme.secondaryText === "[#7C3AED]"
-            ? "bg-[#7C3AED]/40"
-            : theme.secondaryText === "[#06AED4]"
-            ? "bg-[#06AED4]/40"
-            : theme.secondaryText === "[#D946EF]"
-            ? "bg-[#D946EF]/40"
-            : theme.secondaryText === "[#10B981]"
-            ? "bg-[#10B981]/40"
-            : theme.secondaryText === "[#3B82F6]"
-            ? "bg-[#3B82F6]/40"
-            : theme.secondaryText === "[#F97316]"
-            ? "bg-[#F97316]/40"
-            : "bg-gray-500"
-        }`}
+              className="absolute inset-0 mix-blend-color"
+              style={{
+                backgroundColor:
+                  theme.secondaryText === "rgba(209, 209, 214, 1)"
+                    ? `${theme.background}`
+                    : theme.secondaryText === "rgba(183, 212, 245, 0.4)"
+                    ? `${theme.background}`
+                    : theme.secondaryText === "rgba(183, 212, 245, 0.01)"
+                    ? `${theme.background}`
+                    : theme.secondaryText === "rgba(154, 109, 223, 0.5)"
+                    ? `${theme.background}`
+                    : theme.secondaryText === "rgba(211, 153, 186, 0.6)"
+                    ? `${theme.background}`
+                    : theme.secondaryText === "rgba(255, 177, 177, 0.3)"
+                    ? `${theme.background}`
+                    : theme.secondaryText === "rgba(233, 79, 14, 0.15)"
+                    ? `${theme.background}`
+                    : theme.secondaryText === "rgba(119, 78, 52, 0.25)"
+                    ? `${theme.background}`
+                    : theme.secondaryText === "rgba(46, 62, 64, 0.5)"
+                    ? `${theme.background}`
+                    : theme.secondaryText === "rgba(18, 25, 26, 0.3)"
+                    ? `${theme.background}`
+                    : theme.secondaryText === "rgba(82, 82, 91, 0.5)"
+                    ? `${theme.background}`
+                    : "bg-gray-500",
+              }}
             ></div>
           </div>
         </div>

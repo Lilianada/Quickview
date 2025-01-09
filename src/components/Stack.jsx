@@ -8,7 +8,7 @@ const Stack = () => {
     <section>
       <div id="stack" className="lg:my-12 lg:min-h-screen">
         <h2
-          className={`text-[20px] leading-[36px] font-semibold mb-12 text-right lg:text-[70px] lg:font-[900] lg:leading-[70px] lg:w-1/3 lg:mb-24`}
+          className={`text-[20px] leading-[36px] font-semibold mb-12 text-right lg:text-[70px] lg:font-[900] lg:leading-[70px] lg:w-1/3 ml-auto`}
         >
           <span className="opacity-70">My </span>
           <span style={{ color: theme.primaryText }}>Stack</span>{" "}
@@ -18,7 +18,7 @@ const Stack = () => {
             key={index}
             className={`flex mb-6 rounded-lg w-full p-5 gap-4`}
             style={{
-              color: theme.secondaryText,
+              color: theme.primaryText,
               backgroundColor: theme.card,
             }}
           >

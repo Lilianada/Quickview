@@ -110,14 +110,14 @@ export const themeConfig = {
         primaryText: '#c3ebf1',
         secondaryText: 'rgba(183, 212, 245, 0.4)',
         accent: '#164E63',
-        card: '#CFFAFE'
+        card: '#23656B'
     },
     oceanDusk: {
         background: '#182938',
         primaryText: '#b7d4f5',
         secondaryText: 'rgba(183, 212, 245, 0.01)',
         accent: 'rgba(242, 195, 164, 0.12)',
-        card: '#182938'
+        card: '#3B5871'
     },
     twilightLavender: {
         background: '#2e3248',
@@ -166,7 +166,7 @@ export const themeConfig = {
         primaryText: '#12191a',
         secondaryText: 'rgba(18, 25, 26, 0.3)',
         accent: '#5D7F81',
-        card: '#F0FCFE'
+        card: '#D5E2E5'
     },
     light: {
         background: '#ffffff',

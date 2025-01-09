@@ -18,7 +18,7 @@ const Projects = () => {
           <div
             key={index}
             className={` mb-6 rounded-lg w-full gap-4`}
-            style={{ color: theme.secondaryText }}
+            style={{ color: theme.primaryText }}
           >
             <div className="rounded-full h-16 w-16 lg:h-20 lg:w-20 flex items-center justify-center">
               <img

@@ -10,14 +10,12 @@ const About = () => {
       <div id="about" className="mb-16 lg:hidden">
         <h1
           className={`text-[36px] leading-[50px] font-[700] mb-4`}
-          style={{ color: theme.primaryText }}
         >
           I'm a Self-taught developer.
         </h1>
 
         <div
           className={`space-y-4 text-sm`}
-          style={{ color: theme.secondaryText }}
         >
           <p>
             Specializing in frontend development using{" "}
@@ -42,25 +40,26 @@ const About = () => {
         </div>
 
         <div
-          className="flex items-center gap-4 mt-6"
-          style={{ color: theme.primaryText }}
+          className="flex items-center gap-3 mt-6"
         >
-          <img
-            src="/image/profile-photo.jpeg"
-            alt="Avatar"
-            className="rounded-full w-12 h-12"
-          />
+          <div className="rounded-full h-16 w-16 flex items-center justify-center">
+            <img
+              src="/image/profile-photo.jpeg"
+              alt="Avatar"
+              className="h-12 w-12 object-cover rounded-full"
+            />
+          </div>
           <div className="flex space-x-3">
             {/* Use react-dom */}
-            <a href="#" className="flex items-center gap-1 text-sm">
+            <a href="https://legacy.reactjs.org/docs/react-dom.html" className="flex items-center gap-1 text-sm">
               <FaGithub size={20} />
               GitHub
             </a>
-            <a href="#" className="flex items-center gap-1 text-sm">
+            <a href="https://legacy.reactjs.org/docs/react-dom.html" className="flex items-center gap-1 text-sm">
               <FaLinkedin size={20} />
               LinkedIn
             </a>
-            <a href="#" className="flex items-center gap-1 text-sm">
+            <a href="https://legacy.reactjs.org/docs/react-dom.html" className="flex items-center gap-1 text-sm">
               <FaLinkedin size={20} />
               Twitter
             </a>
@@ -71,10 +70,10 @@ const About = () => {
         id="desktop-about"
         className="mb-12 min-h-screen hidden lg:flex flex-row"
       >
-        <div className="mb-8">
+        <div className="mb-8" style={{ color: theme.primaryText }}>
           <h1
             className={`text-[70px] font-[700] leading-[70px] w-1/2`}
-            style={{ color: theme.primaryText }}
+            
           >
             I'm a Product Manager.
           </h1>

@@ -83,7 +83,7 @@ const Header = () => {
         <div className="text-[36px] font-bold leading-[44px] font-grotesk">LA</div>
       </nav>
 
-      <div className="hidden lg:grid grid-rows-3">
+      <div className="hidden lg:flex flex-col gap-32">
         <div
           className={`text-[48px] font-bold leading-[44px] font-grotesk `}
           style={{ color: theme.primaryText }}
@@ -98,7 +98,7 @@ const Header = () => {
                   ${
                     activeDesSection === section.id
                       ? "opacity-100"
-                      : "opacity-30 hover:opacity-60"
+                      : "opacity-50 hover:opacity-80"
                   }`}
               style={{ color: theme.primaryText }}
               onClick={() => scrollToSection(section.id)}
