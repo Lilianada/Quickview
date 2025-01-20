@@ -47,11 +47,21 @@ const Portfolio = () => {
             color: theme.primaryText,
           }}
         >
-          <About />
-          <Experience />
-          <Projects />
-          <Stack />
-          <Now />
+          <section id="desktop-about">
+            <About />
+          </section>
+          <section id="desktop-experience">
+            <Experience />
+          </section>
+          <section id="desktop-project">
+            <Projects />
+          </section>
+          <section id="desktop-stack">
+            <Stack />
+          </section>
+          <section id="desktop-now">
+            <Now />
+          </section>
           <Contact />
         </div>
 
@@ -59,7 +69,7 @@ const Portfolio = () => {
           <div className="h-full w-full absolute inset-0">
             <img
               src="./image/profile-photo.jpeg"
-              alt=""
+              alt="Lilian Okeke"
               className="object-cover h-full w-full absolute top-0 left-0 opacity-80"
             />
             <div

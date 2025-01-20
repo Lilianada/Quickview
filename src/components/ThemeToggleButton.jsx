@@ -73,7 +73,7 @@ const ThemeToggleButton = () => {
                   className="absolute w-[1.5px] h-2 transition-all duration-300"
                   style={{
                     backgroundColor: theme.primaryText,
-                    transform: `rotate(${i * 45}deg) translateY(-13px)`,
+                    transform: `rotate(${i * 50}deg) translateY(-12px)`,
                     opacity: expanded ? 0.7 : 1,
                   }}
                 />

@@ -1,10 +1,7 @@
 import React from "react";
-import { useTheme } from "../context/ThemeContext";
 import { experiences } from "./data";
 
 const Experience = () => {
-  const { theme } = useTheme();
-
   return (
     <section>
       <div

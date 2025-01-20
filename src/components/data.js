@@ -109,7 +109,7 @@ export const themeConfig = {
         background: '#051a1c',
         primaryText: '#c3ebf1',
         secondaryText: 'rgba(183, 212, 245, 0.4)',
-        accent: '#164E63',
+        accent: '#06AED4',
         card: '#23656B'
     },
     oceanDusk: {

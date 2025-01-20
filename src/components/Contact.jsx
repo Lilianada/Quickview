@@ -6,10 +6,10 @@ const Contact = () => {
   const { theme } = useTheme();
   return (
     <section className="hidden lg:flex flex-col" >
-      <div id="desktop-contact" className="mt-10">
+      <div id="desktop-contact" className="mt-12">
         <div className="">
           <h2
-            className={`text-[70px] font-[900] leading-[70px] w-1/3 mb-5`}
+            className={`text-[70px] font-[900] leading-[70px] w-1/3 mb-12`}
             
           >
             Contact
@@ -89,7 +89,7 @@ const Contact = () => {
             />
           </span>
 
-          <p className="mt-4">© 2023 - Lilian Okeke.</p>
+          <p className="mt-4">© {new Date().getFullYear()} - Lilian Okeke.</p>
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@ const About = () => {
 
   return (
     <section>
-      <div id="about" className="mb-16 lg:hidden">
+      <div id="about" className="mb-12 lg:hidden">
         <h1
           className={`text-[36px] leading-[50px] font-[700] mb-4`}
         >
@@ -70,7 +70,7 @@ const About = () => {
         id="desktop-about"
         className="mb-12 min-h-screen hidden lg:flex flex-row"
       >
-        <div className="mb-8" style={{ color: theme.primaryText }}>
+        <div className="" style={{ color: theme.primaryText }}>
           <h1
             className={`text-[70px] font-[700] leading-[70px] w-1/2`}
             

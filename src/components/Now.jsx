@@ -5,7 +5,7 @@ const Now = () => {
     <section>
       <div id="now" className="">
         <h2
-          className={`text-[20px] leading-[36px] font-semibold mb-5 text-left lg:text-[70px] lg:font-[900] lg:leading-[70px] lg:w-1/3 `}
+          className={`text-[20px] leading-[36px] font-semibold mb-12 text-left lg:text-[70px] lg:font-[900] lg:leading-[70px] lg:w-1/3 `}
         >
           Now
         </h2>
