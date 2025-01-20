@@ -67,7 +67,7 @@ const ThemeToggleButton = () => {
                 }}
               />
 
-              {[...Array(8)].map((_, i) => (
+              {[...Array(7)].map((_, i) => (
                 <div
                   key={i}
                   className="absolute w-[1.5px] h-2 transition-all duration-300"

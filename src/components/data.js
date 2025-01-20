@@ -133,13 +133,6 @@ export const themeConfig = {
         accent: '#F17EB1',
         card: '#574F6D'
     },
-    royalBlush: {
-        background: '#5543c5',
-        primaryText: '#ffb1b1',
-        secondaryText: 'rgba(255, 177, 177, 0.3)',
-        accent: '#FF8080',
-        card: '#6E57CF'
-    },
     peachCream: {
         background: '#ffd2b4',
         primaryText: '#e94f0e',

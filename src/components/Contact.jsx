@@ -24,7 +24,7 @@ const Contact = () => {
                 style={{ backgroundColor: theme.primaryText }}
               />
             </span>
-            <span className="flex items-center gap-1.5 text-blue-400">
+            <span className="flex items-center gap-1.5" style={{ color: theme.accent }}>
               <a href="mailto:Lilianokeke.ca@gmail.com" className="shrink-0">
                 Lilianokeke.ca@gmail.com
               </a>
@@ -40,7 +40,7 @@ const Contact = () => {
                 style={{ backgroundColor: theme.primaryText }}
               />
             </span>
-            <span className="flex items-center gap-1.5 text-blue-400">
+            <span className="flex items-center gap-1.5" style={{ color: theme.accent }}>
               <a href="http:" className="shrink-0">
                 @Lilianokeke
               </a>
@@ -56,7 +56,7 @@ const Contact = () => {
                 style={{ backgroundColor: theme.primaryText }}
               />
             </span>
-            <span className="flex items-center gap-1.5 text-blue-400">
+            <span className="flex items-center gap-1.5" style={{ color: theme.accent }}>
               <a href="http:" className="shrink-0">
                 @Lilianokeke
               </a>
@@ -72,7 +72,7 @@ const Contact = () => {
                 style={{ backgroundColor: theme.primaryText }}
               />
             </span>
-            <span className="flex items-center gap-1.5 text-blue-400">
+            <span className="flex items-center gap-1.5" style={{ color: theme.accent }}>
               <a href="http:" className="shrink-0">
                 @Lilianokeke
               </a>
