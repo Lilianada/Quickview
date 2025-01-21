@@ -8,26 +8,26 @@ const About = () => {
   return (
     <section>
       <div id="about" className="mb-16 lg:hidden">
-        <h1 className={`text-[48px] leading-[50px] font-[700] mb-8`}>
+        <h1 className={`text-[58px] leading-[56px] font-bold mb-8 w-1/2`}>
           I'm a Product Manager.
         </h1>
 
-        <div className={`space-y-6 text-sm`}>
-          <p className="leading-6">
+        <div className={`space-y-6 text-base`}>
+          <p className="leading-7">
             Having spent over four years as a MERN Stack Developer, I
             transitioned into{" "}
             <span style={{ color: theme.accent }}>Product Management</span>,
             where I now specialize in managing the design and development of
             digital solutions and experiences.
           </p>
-          <p className="leading-6">
+          <p className="leading-7">
             Currently, I work at Building Bloques Creative Studio, a digital and
             visual studio where I lead the development team as a Product
             Manager. We focus on crafting tailored solutions for a diverse range
             of brands and businesses, creating exceptional experiences through
             the digital products we design and build.
           </p>
-          <p className="leading-6">
+          <p className="leading-7">
             When I’m not coding or exploring new designs, I am at the gym
             hitting new PRs and on Instagram encouraging women in to becoming
             the fittest versions of themselves.
@@ -69,11 +69,12 @@ const About = () => {
         </div>
       </div>
 
+{/* Desktop */}
       <div
         className="mb-12 min-h-screen hidden lg:flex flex-row"
       >
         <div className="" style={{ color: theme.primaryText }}>
-          <h1 className={`text-[70px] font-[700] leading-[70px] w-1/2`}>
+          <h1 className={`text-[70px] font-bold leading-[70px] w-1/2`}>
             I'm a Product Manager.
           </h1>
           <div className={`text-base text-justify flex justify-end my-6`}>
