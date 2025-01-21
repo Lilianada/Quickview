@@ -8,11 +8,20 @@ const Experience = () => {
         id="experience"
         className="mb-32 lg:min-h-screen"
       >
-        <h2
-          className={`text-[20px] leading-[36px] font-semibold mb-12 text-right lg:text-[70px] lg:font-[900] lg:leading-[70px] lg:w-3/4 ml-auto`}
+                <div className="lg:hidden grid items-center col-span-2 grid-cols-[1fr_auto] gap-4 mb-12">
+          <span className="inline-block h-[1.5px] bg-current opacity-50 transition-all duration-300 w-full" />
+          <h2
+          className={`text-[20px] leading-[36px] font-semibold text-right lg:text-[70px] lg:font-[900] lg:leading-[70px] lg:w-3/4 ml-auto`}
         >
-          <span>6 years </span>
-          <span className="opacity-70">of experience</span>{" "}
+          <span>6 Years </span>
+          <span className="opacity-70">of Experience</span>{" "}
+        </h2>
+        </div>
+        <h2
+          className={`hidden lg:block text-[20px] leading-[36px] font-semibold mb-12 text-right lg:text-[70px] lg:font-[900] lg:leading-[70px] lg:w-3/4 ml-auto`}
+        >
+          <span>6 Years </span>
+          <span className="opacity-70">of Experience</span>{" "}
         </h2>
         
         {experiences.map((exp, index) => (
