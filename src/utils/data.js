@@ -6,35 +6,35 @@ export const experiences = [
         description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.'
     },
     {
-        period: 'April 2022 - Present',
+        period: 'Apr 2022 - Present',
         company: 'Building Bloques Creatove Studio',
         role: 'Project Manager',
         description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.'
     },
     {
-        period: 'March 2022 - November 2022',
+        period: 'Mar 2023 - Jan 2025',
+        company: 'Supreme Marketing Limited',
+        role: 'Lead Frontend Developer',
+        description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.'
+    },
+    {
+        period: 'Mar 2022 - Nov 2022',
         company: 'Coloring Cultures',
         role: 'Product Manager',
         description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.'
     },
-    {
-        period: 'March 2023 - Jan 2025',
-        company: 'Supreme Marketing Limited',
-        role: 'Lead Frontend Developer',
-        description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.'
-    }
 ];
 
 export const projects = [
     {
-        name: 'Colouring Cultures',
+        name: 'Firmco Admin & Firmco Client',
         tags: 'E-Commerce',
         description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.',
         image: '/image/project-screenshot1.png'
     },
     {
-        name: 'Colouring Cultures',
-        tags: 'E-Commerce',
+        name: 'Plannr',
+        tags: 'Personal Finance App',
         description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.',
         image: '/image/project-screenshot2.jpeg'
     },
@@ -82,8 +82,8 @@ export const stacks = [
 export const navSections = [
     { id: 'about', label: 'About' },
     { id: 'experience', label: 'Experience' },
-    { id: 'project', label: 'Projects' },
-    { id: 'stack', label: 'Stacks' },
+    { id: 'projects', label: 'Projects' },
+    { id: 'stacks', label: 'Stacks' },
     { id: 'now', label: 'Now' },
     { id: 'contact', label: 'Contact' }
 ];

@@ -3,9 +3,17 @@ import React from "react";
 const Now = () => {
   return (
     <section>
-      <div id="now" className="">
+      <div id="now" className="mb-32">
+        <div className="lg:hidden grid items-center col-span-2 grid-cols-[auto_1fr] gap-4 mb-12">
+          <h2
+            className={`text-[20px] leading-[36px] font-semibold text-left lg:text-[70px] lg:font-[900] lg:leading-[70px] lg:w-1/3 `}
+          >
+            Now
+          </h2>
+          <span className="inline-block h-[1.5px] bg-current opacity-50 transition-all duration-300 w-full" />
+        </div>
         <h2
-          className={`text-[20px] leading-[36px] font-semibold mb-12 text-left lg:text-[70px] lg:font-[900] lg:leading-[70px] lg:w-1/3 `}
+          className={`hidden lg:flex mb-12 text-[20px] leading-[36px] font-semibold text-left lg:text-[70px] lg:font-[900] lg:leading-[70px] lg:w-1/3 `}
         >
           Now
         </h2>
@@ -22,7 +30,6 @@ const Now = () => {
         <div className="mb-6">
           <h3
             className={`font-medium text-[18px] leading-[21px] mb-3 lg:text-[24px]`}
-            
           >
             What I am doing:
           </h3>
@@ -33,39 +40,29 @@ const Now = () => {
 
         <ul className="space-y-4 mb-6 list-disc pl-5">
           <li className="text-[12px] leading-6 lg:text-[14px]">
-            <strong >
-              Decorating my new home:
-            </strong>{" "}
-            Adding pieces of decor and household items to make my new house a
-            home.
+            <strong>Decorating my new home:</strong> Adding pieces of decor and
+            household items to make my new house a home.
           </li>
 
           <li className="text-[12px] leading-6 lg:text-[14px]">
-            <strong >
-              Morning walks before I start working:
-            </strong>{" "}
-            Prioritizing physical health and mental clarity.
+            <strong>Morning walks before I start working:</strong> Prioritizing
+            physical health and mental clarity.
           </li>
 
           <li className="text-[12px] leading-6 lg:text-[14px]">
-            <strong >
-              Working on Building bloques and upcoming ventures:
-            </strong>{" "}
+            <strong>Working on Building bloques and upcoming ventures:</strong>{" "}
             Dedicating my leisure-time to grow my projects.
           </li>
 
           <li className="text-[12px] leading-6 lg:text-[14px]">
-            <strong >Sleeping More:</strong>{" "}
-            Changing my wake up time from 5am to 6am has allowed me to sleep
-            more which in turn makes me more active during the day and with less
-            cravings.
+            <strong>Sleeping More:</strong> Changing my wake up time from 5am to
+            6am has allowed me to sleep more which in turn makes me more active
+            during the day and with less cravings.
           </li>
 
           <li className="text-[12px] leading-6 lg:text-[14px]">
-            <strong >
-              Being consistent in working on my projects:
-            </strong>{" "}
-            Early planning for a minimal task management app.
+            <strong>Being consistent in working on my projects:</strong> Early
+            planning for a minimal task management app.
           </li>
         </ul>
 

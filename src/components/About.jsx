@@ -7,7 +7,7 @@ const About = () => {
 
   return (
     <section>
-      <div id="about" className="mb-16 lg:hidden">
+      <div id="about" className="mb-32 lg:hidden">
         <h1 className={`text-[58px] leading-[56px] font-bold mb-8 w-1/2`}>
           I'm a Product Manager.
         </h1>
@@ -22,8 +22,8 @@ const About = () => {
           </p>
           <p className="leading-7">
             Currently, I work at Building Bloques Creative Studio, a digital and
-            visual studio where I lead the development team as a Product
-            Manager. We focus on crafting tailored solutions for a diverse range
+            visual studio where I lead the development team as a  <span style={{ color: theme.accent }}>Product
+            Manager</span>. We focus on crafting tailored solutions for a diverse range
             of brands and businesses, creating exceptional experiences through
             the digital products we design and build.
           </p>
@@ -90,8 +90,8 @@ const About = () => {
           <div className={`text-base flex my-6`}>
             <p className="w-1/2 text-justify">
               Currently, I work at Building Bloques Creative Studio, a digital
-              and visual studio where I lead the development team as a Product
-              Manager. We focus on crafting tailored solutions for a diverse
+              and visual studio where I lead the development team as a  <span style={{ color: theme.accent }}>Product
+              Manager</span>. We focus on crafting tailored solutions for a diverse
               range of brands and businesses, creating exceptional experiences
               through the digital products we design and build.
             </p>

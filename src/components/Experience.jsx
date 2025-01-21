@@ -6,12 +6,12 @@ const Experience = () => {
     <section>
       <div
         id="experience"
-        className="mb-16 lg:my-12 lg:mb-0 lg:min-h-screen"
+        className="mb-32 lg:min-h-screen"
       >
         <h2
           className={`text-[20px] leading-[36px] font-semibold mb-12 text-right lg:text-[70px] lg:font-[900] lg:leading-[70px] lg:w-3/4 ml-auto`}
         >
-          <span>4 years </span>
+          <span>6 years </span>
           <span className="opacity-70">of experience</span>{" "}
         </h2>
         
