@@ -20,10 +20,16 @@ const Experience = () => {
             key={index}
             className="mb-10 lg:flex lg:mb-6 lg:p-4"
           >
-            <p className={`text-sm leading-3 mb-1.5 lg:w-1/4 lg:mt-[6px]`}>{exp.period}</p>
-            <h3 className={`font-medium text-[18px] leading-[21px] mb-2 lg:hidden`}>
+            <p className={`text-xs leading-4 lg:w-1/4 lg:mt-[6px]`}>{exp.period}</p>
+            <p
+              className="mt-2 leading-4 text-xs lg:hidden opacity-50 tracking-widest uppercase"
+            >
+              {exp.role}
+            </p>
+            <h3 className={`mt-1 font-semibold text-lg lg:hidden`}>
               {exp.company}
             </h3>
+            {/* desktop */}
             <div className="hidden lg:flex flex-col w-3/4">
               <h3 className="font-semibold text-[20px] leading-6">
                 {exp.company}
@@ -31,13 +37,10 @@ const Experience = () => {
               <p className="text-sm opacity-50 mb-2">{exp.role}</p>
               <p className=" opacity-80">{exp.description}</p>
             </div>
+
+            
             <p
-              className="my-3 leading-4 text-xs lg:hidden opacity-80"
-            >
-              {exp.role}
-            </p>
-            <p
-              className="lg:hidden text-sm leading-6 opacity-80"
+              className="lg:hidden text-sm leading-5 opacity-80 mt-3"
             >
               {exp.description}
             </p>

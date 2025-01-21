@@ -1,26 +1,26 @@
 export const experiences = [
     {
         period: 'Jan 2023 - Present',
-        company: 'Coloring Cultures',
-        role: 'Frontend Developer',
+        company: 'She Code Africa',
+        role: 'Frontend Technical Lead',
         description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.'
     },
     {
-        period: 'Jan 2023 - Present',
-        company: 'Coloring Cultures',
-        role: 'Frontend Developer',
+        period: 'April 2022 - Present',
+        company: 'Building Bloques Creatove Studio',
+        role: 'Project Manager',
         description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.'
     },
     {
-        period: 'Jan 2023 - Present',
+        period: 'March 2022 - November 2022',
         company: 'Coloring Cultures',
-        role: 'Frontend Developer',
+        role: 'Product Manager',
         description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.'
     },
     {
-        period: 'Jan 2023 - Present',
-        company: 'Coloring Cultures',
-        role: 'Frontend Developer',
+        period: 'March 2023 - Jan 2025',
+        company: 'Supreme Marketing Limited',
+        role: 'Lead Frontend Developer',
         description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.'
     }
 ];
@@ -82,8 +82,8 @@ export const stacks = [
 export const navSections = [
     { id: 'about', label: 'About' },
     { id: 'experience', label: 'Experience' },
-    { id: 'project', label: 'Project' },
-    { id: 'stack', label: 'Stack' },
+    { id: 'project', label: 'Projects' },
+    { id: 'stack', label: 'Stacks' },
     { id: 'now', label: 'Now' },
     { id: 'contact', label: 'Contact' }
 ];
@@ -91,8 +91,8 @@ export const navSections = [
 export const desSections = [
     { id: 'desktop-about', label: 'About' },
     { id: 'desktop-experience', label: 'Experience' },
-    { id: 'desktop-project', label: 'Project' },
-    { id: 'desktop-stack', label: 'Stack' },
+    { id: 'desktop-project', label: 'Projects' },
+    { id: 'desktop-stack', label: 'Stacks' },
     { id: 'desktop-now', label: 'Now' },
     { id: 'desktop-contact', label: 'Contact' }
 ];
