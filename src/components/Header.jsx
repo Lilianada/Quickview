@@ -80,12 +80,12 @@ const Header = () => {
             </motion.div>
           )}
         </AnimatePresence>
-        <div className="text-[36px] font-bold leading-[44px] font-grotesk tracking-[-0.09em]">LA</div>
+        <div className="text-[28px] font-medium leading-[44px] font-grotesk tracking-[-0.09em]">LA</div>
       </nav>
 
       <div className="hidden lg:flex flex-col gap-32">
         <div
-          className={`text-[36px] font-bold leading-[44px] font-grotesk tracking-[-0.09em]`}
+          className={`text-[36px] font-medium leading-[44px] font-grotesk tracking-[-0.09em]`}
           style={{ color: theme.primaryText }}
         >
           LA

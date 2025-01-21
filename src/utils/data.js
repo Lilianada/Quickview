@@ -109,22 +109,22 @@ export const themeConfig = {
         background: '#051a1c',
         primaryText: '#c3ebf1',
         secondaryText: 'rgba(183, 212, 245, 0.4)',
-        accent: '#06AED4',
-        card: '#23656B'
+        accent: '#2998a1',
+        card: '#1b4d51'
     },
     oceanDusk: {
         background: '#182938',
         primaryText: '#b7d4f5',
         secondaryText: 'rgba(183, 212, 245, 0.01)',
         accent: '#1872be',
-        card: '#3B5871'
+        card: '#2e475d'
     },
     twilightLavender: {
         background: '#2e3248',
         primaryText: '#cfbcec',
         secondaryText: 'rgba(154, 109, 223, 0.5)',
-        accent: '#9f6bfb',
-        card: '#3F3B4D'
+        accent: '#855ccd',
+        card: '#433d59'
     },
     pastelRose: {
         background: '#40364f',
@@ -152,7 +152,7 @@ export const themeConfig = {
         primaryText: '#1e282a',
         secondaryText: 'rgba(46, 62, 64, 0.5)',
         accent: '#28b3cf',
-        card: '#E3F2F5'
+        card: '#e5fbff'
     },
     frostedGlass: {
         background: '#f2fbfd',

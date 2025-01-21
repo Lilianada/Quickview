@@ -8,11 +8,11 @@ const About = () => {
   return (
     <section>
       <div id="about" className="mb-32 lg:hidden">
-        <h1 className={`text-[58px] leading-[56px] font-bold mb-8 w-1/2`}>
+        <h1 className={`text-[56px] leading-[50px] font-bold mb-8 w-1/2`}>
           I'm a Product Manager.
         </h1>
 
-        <div className={`space-y-6 text-base`}>
+        <div className={`space-y-6 text-sm`}>
           <p className="leading-7">
             Having spent over four years as a MERN Stack Developer, I
             transitioned into{" "}
