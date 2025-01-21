@@ -25,6 +25,7 @@ const Home = () => {
           <Projects />
           <Stack />
           <Now />
+          <Contact />
           <ThemeToggleButton />
         </div>
       </div>
