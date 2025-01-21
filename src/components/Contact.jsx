@@ -81,16 +81,7 @@ const Contact = () => {
           </span>
         </div>
 
-        <div className="mt-16">
-          <span className="">
-            <span
-              className="block h-[1px] w-full opacity-30"
-              style={{ backgroundColor: theme.primaryText }}
-            />
-          </span>
-
-          <p className="mt-4">© {new Date().getFullYear()} - Lilian Okeke.</p>
-        </div>
+        
       </div>
     </section>
   );

@@ -6,9 +6,9 @@ import { useTheme } from "../context/ThemeContext";
 
 const Header = () => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
-  const [activeSection, setActiveSection] = useState("about" || "desktop-about");
+  const [activeSection, setActiveSection] = useState("about");
   const { theme } = useTheme();
-  const [activeDesSection, setActiveDesSection] = useState("about");
+  const [activeDesSection, setActiveDesSection] = useState("desktop-about");
 
   useEffect(() => {
     const options = {
@@ -107,7 +107,7 @@ const Header = () => {
               <span className="mx-2 pb-2 inline-block transition-all duration-300">
                 <span
                   className={`inline-block h-[1.5px] bg-current transition-all duration-300 ${
-                    activeDesSection === section.id ? "w-12" : "w-8"
+                    activeDesSection === section.id ? "w-14" : "w-8"
                   }`}
                 />
               </span>

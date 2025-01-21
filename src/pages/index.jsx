@@ -8,6 +8,7 @@ import Stack from "../components/Stack";
 import Now from "../components/Now";
 import Contact from "../components/Contact";
 import { useTheme } from "../context/ThemeContext";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -25,7 +26,7 @@ const Home = () => {
           <Projects />
           <Stack />
           <Now />
-          <Contact />
+          <Footer />
           <ThemeToggleButton />
         </div>
       </div>
@@ -33,7 +34,7 @@ const Home = () => {
       {/* Desktop Layout */}
       <div className="hidden lg:flex h-screen overflow-hidden">
         <div
-          className={`w-[20%] p-8 `}
+          className={`w-[20%] p-6 `}
           style={{
             backgroundColor:
               theme.background === "#242424" ? "#2E2E2E" : `${theme.card}`,
@@ -42,7 +43,7 @@ const Home = () => {
           <Header />
         </div>
         <div
-          className="w-[50%] overflow-y-auto p-8 scroll-smooth container"
+          className="w-[50%] overflow-y-auto p-6 scroll-smooth container"
           style={{
             backgroundColor:
               theme.background === "#242424" ? "#242424" : theme.background,
@@ -65,6 +66,7 @@ const Home = () => {
             <Now />
           </section>
           <Contact />
+          <Footer />
         </div>
 
         <div className="w-[30%] bg-gray-100 flex items-center justify-center relative">

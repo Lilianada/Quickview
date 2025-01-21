@@ -14,20 +14,21 @@ const Experience = () => {
           <span>4 years </span>
           <span className="opacity-70">of experience</span>{" "}
         </h2>
+        
         {experiences.map((exp, index) => (
           <div
             key={index}
             className="mb-10 lg:flex lg:mb-6 lg:p-4"
           >
-            <p className={`text-[12px] leading-3 mb-1.5 lg:w-1/4`}>{exp.period}</p>
-            <h3 className={`font-medium text-[18px] leading-[21px] mb-3 lg:hidden`}>
+            <p className={`text-sm leading-3 mb-1.5 lg:w-1/4 lg:mt-[6px]`}>{exp.period}</p>
+            <h3 className={`font-medium text-[18px] leading-[21px] mb-2 lg:hidden`}>
               {exp.company}
             </h3>
             <div className="hidden lg:flex flex-col w-3/4">
               <h3 className="font-semibold text-[20px] leading-6">
                 {exp.company}
               </h3>
-              <p className="text-xs opacity-80">{exp.role}</p>
+              <p className="text-sm opacity-50 mb-2">{exp.role}</p>
               <p className=" opacity-80">{exp.description}</p>
             </div>
             <p
