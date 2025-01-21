@@ -68,15 +68,15 @@ const About = () => {
           </div>
         </div>
       </div>
+
       <div
-        id="desktop-about"
         className="mb-12 min-h-screen hidden lg:flex flex-row"
       >
         <div className="" style={{ color: theme.primaryText }}>
           <h1 className={`text-[70px] font-[700] leading-[70px] w-1/2`}>
             I'm a Product Manager.
           </h1>
-          <div className={`text-base text-justify flex justify-end my-8`}>
+          <div className={`text-base text-justify flex justify-end my-6`}>
             <p className="w-1/2">
               Having spent over four years as a MERN Stack Developer, I
               transitioned into{" "}
@@ -86,7 +86,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className={`text-base flex my-8`}>
+          <div className={`text-base flex my-6`}>
             <p className="w-1/2 text-justify">
               Currently, I work at Building Bloques Creative Studio, a digital
               and visual studio where I lead the development team as a Product
@@ -95,7 +95,7 @@ const About = () => {
               through the digital products we design and build.
             </p>
           </div>
-          <div className={`text-base flex justify-end my-8 text-left`}>
+          <div className={`text-base flex justify-end my-6 text-left`}>
             <p className="w-1/2">
               When I’m not coding or exploring new designs, I am at the gym
               hitting new PRs and on Instagram encouraging women in to becoming

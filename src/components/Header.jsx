@@ -6,7 +6,7 @@ import { useTheme } from "../context/ThemeContext";
 
 const Header = () => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
-  const [activeSection, setActiveSection] = useState("about");
+  const [activeSection, setActiveSection] = useState("about" || "desktop-about");
   const { theme } = useTheme();
   const [activeDesSection, setActiveDesSection] = useState("about");
 
