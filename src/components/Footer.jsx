@@ -12,7 +12,7 @@ export default function Footer() {
         />
       </span>
 
-      <p className="mt-2 text-sm opacity-50">© {new Date().getFullYear()} - Lilian Okeke.</p>
+      <p className="mt-2 text-sm opacity-50">© {new Date().getFullYear()} - Building Bloques Creative Studio.</p>
     </div>
   );
 }

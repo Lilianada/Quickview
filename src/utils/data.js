@@ -56,26 +56,26 @@ export const stacks = [
     {
         name: 'Next Js',
         tags: 'Javascript Framework',
-        description: 'Next.js is an open-source web development framework created by the private company Vercel providing React',
-        image: '/image/nextjs-logo.png'
+        description: 'Next.js is an open-source web development framework created by the private company Vercel providing React.',
+        image: '/image/next.png'
     },
     {
         name: 'Express Js',
         tags: 'Javascript Framework',
-        description: 'Express.js, or simply Express, is a back end web application framework for building RESTful APIs with Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs.',
-        image: '/image/expressjs-logo.png'
+        description: 'Express.js is a back end web application framework for building RESTful APIs with Node.js and designed for building web applications and APIs.',
+        image: '/image/express.png'
     },
     {
         name: 'Node Js',
         tags: 'Javascript Framework',
-        description: 'Node.js is a cross-platform, open-source JavaScript runtime environment that can run on Windows, Linux, Unix, macOS, and more. Node.js runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser.',
-        image: '/image/nodejs-logo.png'
+        description: 'Node.js is a cross-platform, open-source JavaScript runtime environment that runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser.',
+        image: '/image/node.png'
     },
     {
         name: 'React Js',
         tags: 'Javascript Framework',
-        description: 'React is a free and open-source front-end JavaScript library that aims to make building user interfaces based on components more "seamless". It is maintained by Meta and a community of individual developers and companies.',
-        image: '/image/reactjs-logo.png'
+        description: 'React is a free and open-source front-end JavaScript library that aims to make building user interfaces based on components more "seamless".',
+        image: '/image/react.png'
     }
 ];
 
