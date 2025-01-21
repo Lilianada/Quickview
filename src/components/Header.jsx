@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { navSections, desSections } from "./data";
+import { navSections, desSections } from "../utils/data";
 import ThemeToggleButton from "./ThemeToggleButton";
 import { useTheme } from "../context/ThemeContext";
 

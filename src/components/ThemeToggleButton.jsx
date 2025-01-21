@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
-import { themeConfig } from "../components/data";
+import { themeConfig } from "../utils/data";
 
 const ThemeToggleButton = () => {
   const [expanded, setExpanded] = useState(false);

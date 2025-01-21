@@ -1,6 +1,6 @@
 import React from "react";
 import { useTheme } from "../context/ThemeContext";
-import { projects } from "./data";
+import { projects } from "../utils/data";
 
 const Projects = () => {
   const { theme } = useTheme();

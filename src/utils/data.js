@@ -116,49 +116,49 @@ export const themeConfig = {
         background: '#182938',
         primaryText: '#b7d4f5',
         secondaryText: 'rgba(183, 212, 245, 0.01)',
-        accent: 'rgba(242, 195, 164, 0.12)',
+        accent: '#1872be',
         card: '#3B5871'
     },
     twilightLavender: {
         background: '#2e3248',
         primaryText: '#cfbcec',
         secondaryText: 'rgba(154, 109, 223, 0.5)',
-        accent: '#673AB7',
+        accent: '#9f6bfb',
         card: '#3F3B4D'
     },
     pastelRose: {
         background: '#40364f',
         primaryText: '#f8a6d3',
         secondaryText: 'rgba(211, 153, 186, 0.6)',
-        accent: '#F17EB1',
+        accent: '#ff60a6',
         card: '#574F6D'
     },
     peachCream: {
         background: '#ffd2b4',
-        primaryText: '#e94f0e',
+        primaryText: '#c16640',
         secondaryText: 'rgba(233, 79, 14, 0.15)',
-        accent: '#FF8C42',
+        accent: '#ff611e',
         card: '#FFE6D0'
     },
     vintageBeige: {
         background: '#f3e6cf',
         primaryText: '#774e34',
         secondaryText: 'rgba(119, 78, 52, 0.25)',
-        accent: '#D9A066',
+        accent: '#f9ac5e',
         card: '#F6EDD6'
     },
     iceBlue: {
         background: '#deebee',
         primaryText: '#1e282a',
         secondaryText: 'rgba(46, 62, 64, 0.5)',
-        accent: '#4A7078',
+        accent: '#28b3cf',
         card: '#E3F2F5'
     },
     frostedGlass: {
         background: '#f2fbfd',
         primaryText: '#12191a',
         secondaryText: 'rgba(18, 25, 26, 0.3)',
-        accent: '#5D7F81',
+        accent: '#40c3cb',
         card: '#D5E2E5'
     },
     light: {

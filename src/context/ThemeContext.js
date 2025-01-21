@@ -1,10 +1,11 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
-import { themeConfig } from '../components/data';
+import { themeConfig } from '../utils/data';
 
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const storedTheme = localStorage.getItem('theme') || 'default';
+  const storedTheme = localStorage.getItem('system') || 'default';
+
   const [themeName, setThemeName] = useState(storedTheme);
   const [theme, setTheme] = useState(themeConfig[storedTheme]);
 

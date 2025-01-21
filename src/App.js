@@ -1,11 +1,12 @@
 import React from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import Portfolio from './components/Portfolio';
+import Home from './pages';
 
 const App = () => {
     return (
     <ThemeProvider >
-      <Portfolio />
+      <Home />
     </ThemeProvider>
   );
 };

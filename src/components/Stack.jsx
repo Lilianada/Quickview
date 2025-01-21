@@ -1,6 +1,6 @@
 import React from "react";
 import { useTheme } from "../context/ThemeContext";
-import { stacks } from "./data";
+import { stacks } from "../utils/data";
 
 const Stack = () => {
   const { theme } = useTheme();
