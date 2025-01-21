@@ -1,4 +1,6 @@
-import React from "react";
+import { motion } from "framer-motion";
+import React, { useEffect, useRef } from "react";
+import Scrollbar from "smooth-scrollbar";
 import ThemeToggleButton from "../components/ThemeToggleButton";
 import Header from "../components/Header";
 import About from "../components/About";
@@ -12,6 +14,17 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   const { theme } = useTheme();
+  const scrollContainer = useRef(null);
+
+  useEffect(() => {
+    const scrollbar = Scrollbar.init(scrollContainer.current, {
+      damping: 0.1, // Smoothness of the scrolling
+      thumbMinSize: 20,
+    });
+    return () => {
+      scrollbar.destroy();
+    };
+  }, []);
 
   return (
     <div
@@ -19,7 +32,14 @@ const Home = () => {
       style={{ color: theme.primaryText, backgroundColor: theme.background }}
     >
       <div className="lg:hidden">
-        <div className="min-h-screen p-4 max-w-2xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          ref={scrollContainer}
+          className="min-h-screen p-4 max-w-2xl mx-auto"
+        >
           <Header />
           <About />
           <Experience />
@@ -28,7 +48,7 @@ const Home = () => {
           <Now />
           <Footer />
           <ThemeToggleButton />
-        </div>
+        </motion.div>
       </div>
 
       {/* Desktop Layout */}
@@ -42,7 +62,12 @@ const Home = () => {
         >
           <Header />
         </div>
-        <div
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          ref={scrollContainer}
           className="w-[50%] overflow-y-auto p-6 scroll-smooth container"
           style={{
             backgroundColor:
@@ -67,7 +92,7 @@ const Home = () => {
           </section>
           <Contact />
           <Footer />
-        </div>
+        </motion.div>
 
         <div className="w-[30%] bg-gray-100 flex items-center justify-center relative">
           <div className="h-full w-full absolute inset-0">

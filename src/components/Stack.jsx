@@ -40,8 +40,8 @@ const Stack = () => {
             </div>
             <div className="w-4/5">
               <h3 className="font-bold text-lg">{stack.name}</h3>
-              <span className="text-xs rounded opacity-70">{stack.tags}</span>
-              <p className="text-sm mt-4 opacity-70">{stack.description}</p>
+              <span className="text-xs rounded opacity-50 uppercase tracking-widest">{stack.tags}</span>
+              <p className="text-sm lg:text-base mt-4 opacity-70">{stack.description}</p>
             </div>
           </div>
         ))}

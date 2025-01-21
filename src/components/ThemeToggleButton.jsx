@@ -43,7 +43,7 @@ const ThemeToggleButton = () => {
             <div
               key={index}
               onClick={() => handleDotClick(themeOption)}
-              className="w-[7px] h-[7px] rounded-full cursor-pointer transition-all duration-300"
+              className="w-[10px] h-[10px] lg:w-[7px] lg:h-[7px] rounded-full cursor-pointer transition-all duration-300"
               style={{
                 backgroundColor: theme.primaryText,
                 opacity: themeOption === themeName ? 0.5 : 0.2,

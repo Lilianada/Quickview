@@ -43,7 +43,7 @@ const Experience = () => {
               <h3 className="font-semibold text-[20px] leading-6">
                 {exp.company}
               </h3>
-              <p className="text-sm opacity-50 mb-2">{exp.role}</p>
+              <p className="text-sm opacity-50 tracking-widest uppercase mb-2">{exp.role}</p>
               <p className=" opacity-80">{exp.description}</p>
             </div>
 
