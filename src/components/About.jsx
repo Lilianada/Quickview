@@ -6,8 +6,8 @@ const About = () => {
   const { theme } = useTheme();
 
   return (
-    <section>
-      <div id="about" className="mb-32 lg:hidden">
+    <section className="lg:mb-32">
+      <div id="about" className="lg:hidden">
         <h1 className={`text-[56px] leading-[50px] font-bold mb-8 w-1/2`}>
           I'm a Product Manager.
         </h1>
@@ -71,7 +71,7 @@ const About = () => {
 
 {/* Desktop */}
       <div
-        className="mb-12 min-h-screen hidden lg:flex flex-row"
+        className="min-h-screen hidden lg:flex flex-row"
       >
         <div className="" style={{ color: theme.primaryText }}>
           <h1 className={`text-[70px] font-bold leading-[70px] w-1/2`}>

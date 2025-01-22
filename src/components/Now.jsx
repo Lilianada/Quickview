@@ -2,8 +2,8 @@ import React from "react";
 
 const Now = () => {
   return (
-    <section>
-      <div id="now" className="mb-32">
+    <section className="lg:mb-32">
+      <div id="now" className="">
         <div className="lg:hidden grid items-center col-span-2 grid-cols-[auto_1fr] gap-4 mb-12">
           <h2
             className={`text-[20px] leading-[36px] font-semibold text-left lg:text-[70px] lg:font-[900] lg:leading-[70px] lg:w-1/3 `}

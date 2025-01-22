@@ -5,7 +5,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 const Contact = () => {
   const { theme } = useTheme();
   return (
-    <section className="hidden lg:flex flex-col" >
+    <section className="hidden lg:flex flex-col lg:mb-32" >
       <div id="desktop-contact" className="mt-12">
         <div className="">
           <h2

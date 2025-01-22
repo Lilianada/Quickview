@@ -41,12 +41,14 @@ const Home = () => {
           className="min-h-screen p-4 max-w-2xl mx-auto"
         >
           <Header />
-          <About />
-          <Experience />
-          <Projects />
-          <Stack />
-          <Now />
-          <Footer />
+          <div className="grid gap-32">
+            <About />
+            <Experience />
+            <Projects />
+            <Stack />
+            <Now />
+            <Footer />
+          </div>
           <ThemeToggleButton />
         </motion.div>
       </div>
@@ -62,6 +64,7 @@ const Home = () => {
         >
           <Header />
         </div>
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
