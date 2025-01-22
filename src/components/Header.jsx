@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { navSections, desSections } from "../utils/data";
 import ThemeToggleButton from "./ThemeToggleButton";
 import { useTheme } from "../context/ThemeContext";
+import PurchaseButton from "./PurchaseButton";
 
 const Header = () => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
@@ -116,6 +117,7 @@ const Header = () => {
           ))}
         </nav>
 
+          <PurchaseButton/>
         <ThemeToggleButton />
       </div>
     </div>

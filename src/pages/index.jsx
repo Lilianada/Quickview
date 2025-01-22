@@ -96,7 +96,6 @@ const Home = () => {
             <Now />
           </section>
           <Contact />
-          <PurchaseButton/>
           <Footer />
         </motion.div>
 
