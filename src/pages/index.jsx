@@ -28,7 +28,7 @@ const Home = () => {
 
   return (
     <div
-      className="min-h-screen transition-colors duration-300 font-grotesk"
+      className="min-h-screen transition-colors duration-300 font-grotesk tracking-wide"
       style={{ color: theme.primaryText, backgroundColor: theme.background }}
     >
       <div className="lg:hidden">

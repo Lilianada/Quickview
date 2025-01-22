@@ -9,6 +9,9 @@ module.exports = {
         nerko: ['nerko_oneregular', 'sans-serif'],
         grotesk: ['Schibsted Grotesk', 'serif', 'sans-serif']
       },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+      },
     },
   },
   plugins: [],
