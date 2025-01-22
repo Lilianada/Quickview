@@ -40,7 +40,7 @@ export default function Preloader() {
       className="h-screen transition-colors duration-300 font-grotesk grid place-items-center"
       style={{ color: theme.primaryText, backgroundColor: theme.background }}
     >
-      <div className="w-2/5">
+      <div className="w-4/5 lg:w-2/5">
         <div className="text-center text-2xl animate-spin-slow">
           ✿
         </div>
