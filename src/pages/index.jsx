@@ -11,6 +11,7 @@ import Now from "../components/Now";
 import Contact from "../components/Contact";
 import { useTheme } from "../context/ThemeContext";
 import Footer from "../components/Footer";
+import PurchaseButton from "../components/PurchaseButton";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -49,6 +50,7 @@ const Home = () => {
             <Now />
             <Footer />
           </div>
+          <PurchaseButton/>
           <ThemeToggleButton />
         </motion.div>
       </div>
@@ -94,6 +96,7 @@ const Home = () => {
             <Now />
           </section>
           <Contact />
+          <PurchaseButton/>
           <Footer />
         </motion.div>
 
