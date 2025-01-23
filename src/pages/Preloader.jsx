@@ -8,8 +8,6 @@ export default function Preloader() {
   const rotatingMessages = [
     "Hi, I'm Lily.",
     "Welcome to my portfolio.",
-    "This portfolio is a template called Quickview.",
-    "Buy this template, if you like it.",
     "Hire me, if you like me.",
   ];
 
