@@ -12,25 +12,36 @@ export default function Preloader() {
   ];
 
   useEffect(() => {
-    // Simulate the percentage counter increasing
-    const interval = setInterval(() => {
-      setPercent((prev) => (prev < 100 ? prev + 1 : 100));
-    }, 30); // Adjust the speed as needed
+    const simulateProgress = () => {
+      const interval = setInterval(() => {
+        setPercent((prev) => {
+          if (prev < 100) {
+            return prev + 1;
+          } else {
+            clearInterval(interval); // Stop once the progress reaches 100
+            return prev;
+          }
+        });
+      }, 30); 
 
-    // Rotate the text every 2 seconds
-    const textInterval = setInterval(() => {
-      setRotatingText(
-        (prev) =>
-          rotatingMessages[
-            (rotatingMessages.indexOf(prev) + 1) % rotatingMessages.length
-          ]
-      );
-    }, 1000);
+      const textInterval = setInterval(() => {
+        setRotatingText(
+          (prev) =>
+            rotatingMessages[
+              (rotatingMessages.indexOf(prev) + 1) % rotatingMessages.length
+            ]
+        );
+      }, 1000);
 
-    return () => {
-      clearInterval(interval);
-      clearInterval(textInterval);
+      return () => {
+        clearInterval(interval);
+        clearInterval(textInterval);
+      };
     };
+
+    simulateProgress(); // Start the progress simulation immediately
+
+    return () => simulateProgress();
   }, []);
 
   return (
@@ -57,9 +68,10 @@ export default function Preloader() {
               width: `${percent}%`,
               backgroundColor: theme.accent,
             }}
-          >
-          </div>
-            <p className="text-center absolute">{percent}%</p>
+          ></div>
+
+          {/* Display percentage */}
+          <p className="text-center absolute">{percent}%</p>
         </div>
 
         {/* Rotating message */}
