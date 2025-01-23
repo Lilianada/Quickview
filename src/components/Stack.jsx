@@ -5,7 +5,7 @@ import { stacks } from "../utils/data";
 const Stack = () => {
   const { theme } = useTheme();
   return (
-    <section className="lg:mb-32">
+    <section className="lg:mb-40">
       <div id="stacks" className="lg:min-h-screen">
         <div className="lg:hidden grid items-center col-span-2 grid-cols-[1fr_auto] gap-4 mb-12">
           <span className="inline-block h-[1.5px] bg-current opacity-50 transition-all duration-300 w-full" />
@@ -49,5 +49,4 @@ const Stack = () => {
     </section>
   );
 };
-
 export default Stack;

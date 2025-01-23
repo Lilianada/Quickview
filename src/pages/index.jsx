@@ -101,21 +101,10 @@ const Home = () => {
 
         <div className="w-[30%] bg-gray-100 flex items-center justify-center relative">
           <div className="h-full w-full absolute inset-0">
-          <img
-            sizes="46.35vw"
-	          alt="Lilian Okeke"
-	          className="object-cover h-full w-full absolute top-0 left-0 opacity-80"
-	          srcset="
-		          ./image/profile-photo-480.jpg 480w,
-		          ./image/profile-photo-889.jpg 889w,
-		          ./image/profile-photo-1180.jpg 1180w,
-		          ./image/profile-photo-1410.jpg 1410w,
-		          ./image/profile-photo-1600.jpg 1600w,
-		          ./image/profile-photo-1760.jpg 1760w,
-		          ./image/profile-photo-1910.jpg 1910w,
-		          ./image/profile-photo-2048.jpg 2048w
-	          "
-	          src="./image/profile-photo-1600.jpg"
+            <img
+              src="./image/profile-photo.jpeg"
+              alt="Jane Doe"
+              className="object-cover h-full w-full absolute top-0 left-0 opacity-80"
             />
             <div
               className="absolute inset-0 mix-blend-color"

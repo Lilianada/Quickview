@@ -1,11 +1,10 @@
 import React from "react";
 import { useTheme } from "../context/ThemeContext";
 import { projects } from "../utils/data";
-import { MdOutlineArrowOutward } from "react-icons/md";
+import { GoArrowUpRight } from "react-icons/go";
 
-const Projects = () => {
+const Project = () => {
   const { theme } = useTheme();
-
   return (
     <section className="lg:mb-32">
       <div id="projects" className=" lg:min-h-screen">
@@ -27,30 +26,30 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className={` mb-6 rounded-lg w-full gap-6`}
-            style={{ color: theme.primaryText }}
+            className={`flex items-start mb-6 rounded-lg w-full lg:p-5 gap-3`}
+            style={{
+              color: theme.primaryText,
+            }}
           >
-            <div className="">
-              <h3 className="font-bold text-lg">{project.name}</h3>
-              <p className="text-sm lg:text-base mt-2 opacity-70">
+            <div className="w-4/5">
+              <h3 className="font-bold text-lg leading-4">{project.name}</h3>
+              <span className="text-xs rounded opacity-50 uppercase tracking-widest">
+                {project.tags}
+              </span>
+              <p className="text-sm lg:text-base mt-2 lg:mt-3 opacity-70">
                 {project.description}
               </p>
-              <div className="mt-2 grid items-center col-span-2 grid-cols-[auto_1fr] gap-4 ">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{ color: theme.accent }}
-                  className="text-xs uppercase tracking-widest flex items-center cursor-pointer"
-                >
-                  Preview <MdOutlineArrowOutward />
-                </a>
-                <span
-                  style={{ backgroundColor: theme.primaryText }}
-                  className="inline-block h-[1px] w-full"
-                />
-              </div>
             </div>
+            <a
+              href={project.link}
+              className="bg-transparent border p-2 rounded-full h-10 w-10 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:h-12 hover:w-12"
+              style={{
+                color: theme.accent,
+                borderColor: theme.accent,
+              }}
+            >
+              <GoArrowUpRight size="20" className="transition-all duration-500" />
+              </a>
           </div>
         ))}
       </div>
@@ -58,4 +57,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Project;

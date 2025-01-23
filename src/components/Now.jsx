@@ -1,6 +1,8 @@
 import React from "react";
+import { useTheme } from "../context/ThemeContext";
 
 const Now = () => {
+  const { theme } = useTheme();
   return (
     <section className="lg:mb-32">
       <div id="now" className="">
@@ -78,6 +80,7 @@ const Now = () => {
               className="underline"
               target="_blank"
               rel="noopener noreferrer"
+              style={{color: theme.accent}}
             >
               consider adding one to your site
             </a>

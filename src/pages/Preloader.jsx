@@ -4,11 +4,11 @@ import { useTheme } from "../context/ThemeContext";
 export default function Preloader() {
   const { theme } = useTheme();
   const [percent, setPercent] = useState(0);
-  const [rotatingText, setRotatingText] = useState("Hi, I'm Lily.");
+  const [rotatingText, setRotatingText] = useState("Hi, I'm Jane.");
   const rotatingMessages = [
-    "Hi, I'm Lily.",
+    "Hi, I'm Jane.",
     "Welcome to my portfolio.",
-    "Hire me.",
+    "Buy me.",
   ];
 
   useEffect(() => {

@@ -9,7 +9,7 @@ const About = () => {
     <section className="lg:mb-32">
       <div id="about" className="lg:hidden">
         <h1 className={`text-[56px] leading-[50px] font-bold mb-8 w-1/2`}>
-          I'm a Product Manager.
+          I'm a Software Developer.
         </h1>
 
         <div className={`space-y-6 text-sm font-normal`}>
@@ -82,7 +82,7 @@ const About = () => {
       >
         <div className="" style={{ color: theme.primaryText }}>
           <h1 className={`text-[70px] font-bold leading-[70px] w-1/2`}>
-            I'm a Product Manager.
+            I'm a Software Developer.
           </h1>
           <div className={`text-base text-justify flex justify-end my-6`}>
             <p className="w-1/2">
