@@ -135,21 +135,21 @@ export const themeConfig = {
         primaryText: '#cfbcec',
         secondaryText: 'rgba(154, 109, 223, 0.5)',
         accent: '#855ccd',
-        card: '#433d59'
+        card: '#3a3f5d'
     },
     pastelRose: {
         background: '#40364f',
         primaryText: '#f8a6d3',
-        secondaryText: 'rgba(211, 153, 186, 0.6)',
+        secondaryText: 'rgba(208, 138, 178, 0.6)',
         accent: '#f66aa8',
         card: '#4e4160'
     },
-    peachCream: {
-        background: '#ffd2b4',
-        primaryText: '#c16640',
-        secondaryText: 'rgba(233, 79, 14, 0.15)',
-        accent: '#ff611e',
-        card: '#FFE6D0'
+    strawberryCream: {
+        background: '#ffcfe9',
+        primaryText: '#40364f',
+        secondaryText: 'rgba(255, 207, 233, 0.15)',
+        accent: '#ff8fcc',
+        card: '#fddfef'
     },
     vintageBeige: {
         background: '#f3e6cf',

@@ -129,7 +129,9 @@ const Home = () => {
                     ? `${theme.background}`
                     : theme.secondaryText === "rgba(154, 109, 223, 0.5)"
                     ? `${theme.background}`
-                    : theme.secondaryText === "rgba(211, 153, 186, 0.6)"
+                    : theme.secondaryText === "rgba(208, 138, 178, 0.6)"
+                    ? `${theme.background}`
+                    : theme.secondaryText === "rgba(255, 207, 233, 0.15)"
                     ? `${theme.background}`
                     : theme.secondaryText === "rgba(255, 177, 177, 0.3)"
                     ? `${theme.background}`

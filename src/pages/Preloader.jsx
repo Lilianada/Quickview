@@ -63,7 +63,7 @@ export default function Preloader() {
         >
           {/* Progress bar fill */}
           <div
-            className="absolute top-0 left-0 h-full transition-all duration-300 flex items-center justify-center text-sm font-medium text-center text-white rounded-sm"
+            className="opacity-70 absolute top-0 left-0 h-full transition-all duration-300 flex items-center justify-center text-sm font-medium text-center text-white rounded-sm"
             style={{
               width: `${percent}%`,
               backgroundColor: theme.accent,
