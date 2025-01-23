@@ -117,7 +117,7 @@ const Header = () => {
           ))}
         </nav>
 
-          {/* <PurchaseButton/> */}
+          <PurchaseButton/>
         <ThemeToggleButton />
       </div>
     </div>

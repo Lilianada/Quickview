@@ -50,7 +50,7 @@ const Home = () => {
             <Now />
             <Footer />
           </div>
-          {/* <PurchaseButton/> */}
+          <PurchaseButton/>
           <ThemeToggleButton />
         </motion.div>
       </div>
