@@ -66,17 +66,20 @@ const Now = () => {
           </li>
         </ul>
 
-        <div className="mb-10 leading-6 text-sm lg:text-base">
+        <div className="mb-10 leading-6 text-sm lg:text-base space-y-2">
           <p>
             I plan to update this page regularly, reflecting on my progress and
             adjusting my focus as needed. Stay tuned for the next update!{" "}
+            </p>
+            <p>
+            This is a now section, if you do not have one, {" "}
             <a
-              href="https://"
+              href="https://nownownow.com/"
               className="underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Consider adding one to your site
+              consider adding one to your site
             </a>
           </p>
         </div>

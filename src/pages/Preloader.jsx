@@ -8,7 +8,7 @@ export default function Preloader() {
   const rotatingMessages = [
     "Hi, I'm Lily.",
     "Welcome to my portfolio.",
-    "Hire me, if you like me.",
+    "Hire me.",
   ];
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function Preloader() {
             (rotatingMessages.indexOf(prev) + 1) % rotatingMessages.length
           ]
       );
-    }, 2000);
+    }, 1000);
 
     return () => {
       clearInterval(interval);
