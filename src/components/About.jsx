@@ -36,8 +36,15 @@ const About = () => {
 
         <div className="flex items-center gap-3 mt-6">
           <div className="rounded-full h-16 w-16 flex items-center justify-center">
-            <img
-              src="/image/profile-photo.jpeg"
+            <img 
+              src="/image/profile-photo-48.jpg"
+              srcSet="
+                /image/profile-photo-48.jpg 48w,
+                /image/profile-photo-72.jpg 72w,
+                /image/profile-photo-96.jpg 96w,
+                /image/profile-photo-144.jpg 144w
+              "
+              sizes="3rem"
               alt="Avatar"
               className="h-12 w-12 object-cover rounded-full"
             />
