@@ -3,52 +3,63 @@ export const experiences = [
         period: 'Jan 2023 - Present',
         company: 'She Code Africa',
         role: 'Frontend Technical Lead',
-        description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.'
+        description: 'Overseeing the activities and initiatives of the frontend community at SCA, I also organize and host monthly webinars designed to support, educate, and inspire community members. Additionally, I provide mentoring and guidance to those new to the frontend field.'
     },
     {
         period: 'Apr 2022 - Present',
-        company: 'Building Bloques Creatove Studio',
-        role: 'Project Manager',
-        description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.'
+        company: 'Building Bloques Creative Studio',
+        role: 'Product Manager',
+        description: 'Currently leading the team at BBCS where I drive the development of strategies that align user needs with business objectives, cultivating a culture of teamwork and creative problem-solving to enhance product offerings and improve user experience.'
     },
     {
         period: 'Mar 2023 - Jan 2025',
         company: 'Supreme Marketing Limited',
         role: 'Lead Frontend Developer',
-        description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.'
+        description: 'Led an Agile team of front-end developers in the creation and ongoing maintenance of innovative fintech applications tailored to meet the diverse needs of clients across Europe.'
     },
     {
         period: 'Mar 2022 - Nov 2022',
         company: 'Coloring Cultures',
         role: 'Product Manager',
-        description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.'
+        description: 'Successfully recruited a team of 6 developers (3 mobile, 2 web, 1 backend), a QA tester, and a UI/UX designer within 2 weeks. Led the development of a mobile and web application, coordinating the process to ensure timely delivery within client specifications and budget. Also contributed to the app’s web dashboard and completed the landing page.'
     },
 ];
 
 export const projects = [
     {
-        name: 'Firmco Admin & Firmco Client',
-        tags: 'E-Commerce',
-        description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.',
-        image: '/image/project-screenshot1.png'
+        name: 'Firmco Admin',
+        tags: 'Portfolio Management App',
+        description: 'This app manages and supervises all aspects of financial transactions and user management within the Firmco platform.',
+        image: '/image/project-screenshot1.png',
+        link: 'https://firmco-admin.vercel.app/',
+    },
+    {
+        name: 'Firmco Client',
+        tags: 'Portfolio Management App',
+        description: 'The Firmco online portfolio management client application is developed using React, Tailwind, and Firebase. This app is managed through the Firmco Admin Platform.',
+        image: '/image/project-screenshot1.png',
+        link: 'https://firmco-client.vercel.app/'
     },
     {
         name: 'Plannr',
         tags: 'Personal Finance App',
-        description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.',
-        image: '/image/project-screenshot2.jpeg'
+        description: 'Currently managing the team building Plannr, a personal financial management app that is designed to help users keep track and manage their all their money in one interface.',
+        image: '/image/project-screenshot2.jpeg',
+        link: '/'
     },
     {
-        name: 'Colouring Cultures',
-        tags: 'E-Commerce',
-        description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.',
-        image: '/image/project-screenshot3.png'
+        name: 'BeBlended',
+        tags: 'Web Application',
+        description: 'BeBlended is an online platform connecting Black clients with specialized hairstylists. As a developer, my focus was on building key features for a seamless experience for clients, stylists, and administrators.',
+        image: '/image/project-screenshot3.png',
+        link: 'https://www.beblended.ca/'
     },
     {
-        name: 'Colouring Cultures',
-        tags: 'E-Commerce',
-        description: 'A web design studio providing templates and bespoke solutions for your business or personal brand\'s website.',
-        image: '/image/project-screenshot4.png'
+        name: 'Cloudnimi',
+        tags: 'Landing Page',
+        description: 'Cloudnimi is a one-page B2B website for a Nigerian company focused on business growth through production-grade solutions. Built with React.js and styled with CSS, it provides essential information about the company and its services.',
+        image: '/image/project-screenshot4.png',
+        link: 'https://cloudnimi.netlify.app/'
     }
 ];
 

@@ -41,8 +41,8 @@ const Contact = () => {
               />
             </span>
             <span className="flex items-center gap-1.5" style={{ color: theme.accent }}>
-              <a href="http:" className="shrink-0">
-                @Lilianokeke
+              <a href="https://x.com/lilian_ada_" className="shrink-0">
+                @Lilian_ada_
               </a>
               <MdKeyboardArrowRight />
             </span>
@@ -57,8 +57,8 @@ const Contact = () => {
               />
             </span>
             <span className="flex items-center gap-1.5" style={{ color: theme.accent }}>
-              <a href="http:" className="shrink-0">
-                @Lilianokeke
+              <a href="https://linkedin.com/in/lilianada" className="shrink-0">
+                @Lilianada
               </a>
               <MdKeyboardArrowRight />
             </span>
@@ -73,8 +73,24 @@ const Contact = () => {
               />
             </span>
             <span className="flex items-center gap-1.5" style={{ color: theme.accent }}>
-              <a href="http:" className="shrink-0">
+              <a href="https://github.com/lilianada" className="shrink-0">
                 @Lilianokeke
+              </a>
+              <MdKeyboardArrowRight />
+            </span>
+          </span>
+
+          <span className="flex items-center gap-2">
+            <p className="shrink-0">Instagram</p>
+            <span className="flex-grow">
+              <span
+                className="block h-[1px] w-full opacity-30"
+                style={{ backgroundColor: theme.primaryText }}
+              />
+            </span>
+            <span className="flex items-center gap-1.5" style={{ color: theme.accent }}>
+              <a href="https://instagram.com/defitcreative" className="shrink-0">
+                @Defitcreative
               </a>
               <MdKeyboardArrowRight />
             </span>
