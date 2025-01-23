@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 
 @layer base {
   @font-face {
@@ -12,7 +11,36 @@
     font-weight: normal;
     font-style: normal;
   }
+  
+  @font-face {
+    font-family: "Schibsted Grotesk";
+    src: url("fonts/SchibstedGrotesk/SchibstedGrotesk-Regular.woff2") format("woff2"),
+         url("fonts/SchibstedGrotesk/SchibstedGrotesk-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Schibsted Grotesk";
+    src: url("fonts/SchibstedGrotesk/SchibstedGrotesk-Bold.woff2") format("woff2"),
+         url("fonts/SchibstedGrotesk/SchibstedGrotesk-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  /* @font-face {
+    font-family: "Schibsted Grotesk";
+    src: url("fonts/SchibstedGrotesk/SchibstedGrotesk-Medium.woff2") format("woff2"),
+         url("fonts/SchibstedGrotesk/SchibstedGrotesk-Medium.woff") format("woff");
+    font-weight: medium;
+    font-style: normal;
+  } */
 }
+
+body {
+  font-weight: 400;
+}
+
 
 .container {
   overflow: auto; 

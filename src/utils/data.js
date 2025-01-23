@@ -141,8 +141,8 @@ export const themeConfig = {
         background: '#40364f',
         primaryText: '#f8a6d3',
         secondaryText: 'rgba(211, 153, 186, 0.6)',
-        accent: '#ff60a6',
-        card: '#574F6D'
+        accent: '#f66aa8',
+        card: '#4e4160'
     },
     peachCream: {
         background: '#ffd2b4',

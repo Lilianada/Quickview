@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         nerko: ['nerko_oneregular', 'sans-serif'],
-        grotesk: ['Schibsted Grotesk', 'serif', 'sans-serif']
+        grotesk: ['Schibsted Grotesk', 'serif',]
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",

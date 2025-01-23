@@ -71,7 +71,7 @@ export default function Preloader() {
           ></div>
 
           {/* Display percentage */}
-          <p className="text-center absolute">{percent}%</p>
+          <p className="text-center font-medium absolute">{percent}%</p>
         </div>
 
         {/* Rotating message */}
