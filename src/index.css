@@ -4,13 +4,6 @@
 
 
 @layer base {
-  @font-face {
-    font-family: "nerko_oneregular";
-    src: url("fonts/nerkoone-regular-webfont.woff2") format("woff2"),
-         url("fonts/nerkoone-regular-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
   
   @font-face {
     font-family: "Schibsted Grotesk";
@@ -27,14 +20,6 @@
     font-weight: bold;
     font-style: normal;
   }
-
-  /* @font-face {
-    font-family: "Schibsted Grotesk";
-    src: url("fonts/SchibstedGrotesk/SchibstedGrotesk-Medium.woff2") format("woff2"),
-         url("fonts/SchibstedGrotesk/SchibstedGrotesk-Medium.woff") format("woff");
-    font-weight: medium;
-    font-style: normal;
-  } */
 }
 
 body {

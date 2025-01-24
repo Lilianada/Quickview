@@ -6,7 +6,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        nerko: ['nerko_oneregular', 'sans-serif'],
         grotesk: ['Schibsted Grotesk', 'serif',]
       },
       animation: {

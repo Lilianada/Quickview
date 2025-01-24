@@ -26,7 +26,7 @@ const Project = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`flex items-start mb-6 rounded-lg w-full lg:p-5 gap-3`}
+            className={`flex items-start justify-between mb-6 rounded-lg w-full lg:p-5 gap-3`}
             style={{
               color: theme.primaryText,
             }}
