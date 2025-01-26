@@ -17,30 +17,31 @@ const Experience = () => {
         <span className="opacity-70">of Experience</span>
       </h2>
 
-      <div className="lg:hidden relative pl-4 min-h-screen">
+      <div className="relative pl-4 min-h-screen">
         {experiences.map((exp, index) => (
           <div 
             key={index} 
-            className="relative pl-4 pb-4 last:pb-0 mb-4"
+            className="relative pl-4 last:pb-0 mb-4"
           >
             <div className="absolute left-[-20px] top-0 bottom-0 flex flex-col items-center gap-2 mt-2">
               <div className="w-2 h-2 bg-current rounded-full"></div>
               <div className="w-[1px] h-full bg-current opacity-30" ></div>
             </div>
-            <div className="space-y-1">
-              <h3 className="font-semibold text-lg">{exp.company}</h3>
-              <p className="mt-1 text-xs leading-4">{exp.period}</p>
-              <p className="mt-4 leading-4 text-xs opacity-50 tracking-widest uppercase">
+
+            <div className="">
+              <h3 className="font-semibold text-lg leading-6">{exp.company}</h3>
+              <p className="text-xs mt-1 opacity-50">{exp.period}</p>
+              <p className="mt-3 text-xs tracking-widest uppercase">
                 {exp.role}
               </p>
-              <p className="text-sm leading-5 opacity-80 mt-1">{exp.description}</p>
+              <p className="text-sm mt-1 leading-6 opacity-80">{exp.description}</p>
             </div>
           </div>
         ))}
       </div>
 
       {/* desktop */}
-      <div className="hidden lg:block">
+      {/* <div className="hidden">
         {experiences.map((exp, index) => (
           <div key={index} className="flex mb-6 p-4">
             <p className={`text-xs leading-4 w-1/4 mt-[6px]`}>
@@ -57,7 +58,7 @@ const Experience = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };
