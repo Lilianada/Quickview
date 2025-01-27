@@ -21,7 +21,10 @@
     font-style: normal;
   }
 }
-
+html {
+  scroll-behavior: smooth;
+}
+ 
 body {
   font-weight: 400;
 }
@@ -35,6 +38,19 @@ body {
 
 .container::-webkit-scrollbar {
   display: none; 
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-fade-in {
+  animation: fade-in 0.75s ease-in forwards;
 }
 
 

@@ -1,6 +1,4 @@
-import { motion } from "framer-motion";
 import React, { useEffect, useRef } from "react";
-import Scrollbar from "smooth-scrollbar";
 import ThemeToggleButton from "../components/ThemeToggleButton";
 import Header from "../components/Header";
 import About from "../components/About";
@@ -12,21 +10,19 @@ import Contact from "../components/Contact";
 import { useTheme } from "../context/ThemeContext";
 import Footer from "../components/Footer";
 import PurchaseButton from "../components/PurchaseButton";
+import Section from "../components/Section";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const { theme } = useTheme();
   const scrollContainer = useRef(null);
 
   useEffect(() => {
-    const scrollbar = Scrollbar.init(scrollContainer.current, {
-      damping: 0.1, // Smoothness of the scrolling
-      thumbMinSize: 20,
-    });
-    return () => {
-      scrollbar.destroy();
-    };
+    // Enable smooth scrolling for the page
+    if (scrollContainer.current) {
+      scrollContainer.current.style.scrollBehavior = "smooth";
+    }
   }, []);
-
   return (
     <div
       className="min-h-screen transition-colors duration-300 font-grotesk tracking-wide"
@@ -34,15 +30,15 @@ const Home = () => {
     >
       <div className="lg:hidden">
         <motion.div
+          className="min-h-screen p-4 max-w-2xl mx-auto scroll-smooth"
+          ref={scrollContainer}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
-          ref={scrollContainer}
-          className="min-h-screen p-4 max-w-2xl mx-auto"
+          transition={{ duration: 0.75 }}
         >
           <Header />
-          <div className="grid gap-32">
+          <div className="grid gap-32" 
+          >
             <About />
             <Experience />
             <Projects />
@@ -50,7 +46,7 @@ const Home = () => {
             <Now />
             <Footer />
           </div>
-          <PurchaseButton/>
+          <PurchaseButton />
           <ThemeToggleButton />
         </motion.div>
       </div>
@@ -67,37 +63,34 @@ const Home = () => {
           <Header />
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
-          ref={scrollContainer}
-          className="w-[50%] overflow-y-auto p-6 scroll-smooth container"
+        <div
+          className="w-[50%] overflow-y-auto p-6 s container opacity-0 transition-opacity duration-500 animate-fade-in"
           style={{
             backgroundColor:
               theme.background === "#242424" ? "#242424" : theme.background,
             color: theme.primaryText,
           }}
         >
-          <section id="desktop-about">
+          <Section id="desktop-about">
             <About />
-          </section>
-          <section id="desktop-experience">
+          </Section>
+          <Section id="desktop-experiences">
             <Experience />
-          </section>
-          <section id="desktop-project">
+          </Section>
+          <Section id="desktop-projects">
             <Projects />
-          </section>
-          <section id="desktop-stack">
+          </Section>
+          <Section id="desktop-stacks">
             <Stack />
-          </section>
-          <section id="desktop-now">
+          </Section>
+          <Section id="desktop-now">
             <Now />
-          </section>
-          <Contact />
+          </Section>
+          <Section id="desktop-contact">
+            <Contact />
+          </Section>
           <Footer />
-        </motion.div>
+        </div>
 
         <div className="w-[30%] bg-gray-100 flex items-center justify-center relative">
           <div className="h-full w-full absolute inset-0">

@@ -6,7 +6,7 @@ const Contact = () => {
   const { theme } = useTheme();
   return (
     <section className="hidden lg:flex flex-col lg:mb-32" >
-      <div id="desktop-contact" className="mt-12">
+      <div id="contact" className="">
         <div className="">
           <h2
             className={`text-[70px] font-[900] leading-[70px] w-1/3 mb-12`}

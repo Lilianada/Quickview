@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { navSections, desSections } from "../utils/data";
 import ThemeToggleButton from "./ThemeToggleButton";
 import { useTheme } from "../context/ThemeContext";
 import PurchaseButton from "./PurchaseButton";
+import Scrollbar from "smooth-scrollbar";
 
 const Header = () => {
+  const { theme } = useTheme();
+    const scrollContainer = useRef(null);
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
   const [activeSection, setActiveSection] = useState("about");
-  const { theme } = useTheme();
   const [activeDesSection, setActiveDesSection] = useState("desktop-about");
 
   useEffect(() => {
@@ -46,14 +48,13 @@ const Header = () => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
-      setActiveDesSection(sectionId);
     }
-  };
-
+  }; 
+  
   return (
     <div>
       <nav className="lg:hidden flex justify-between items-center mb-16">
@@ -84,6 +85,7 @@ const Header = () => {
         <div className="text-[28px] font-medium leading-[44px] font-grotesk tracking-[-0.09em]">LA</div>
       </nav>
 
+          {/* Desktop */}
       <div className="hidden lg:flex flex-col gap-32">
         <div
           className={`text-[36px] font-medium leading-[44px] font-grotesk tracking-[-0.09em]`}

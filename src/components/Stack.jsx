@@ -6,7 +6,7 @@ const Stack = () => {
   const { theme } = useTheme();
   return (
     <section className="lg:mb-32">
-      <div id="stacks" className="lg:min-h-screen">
+      <div id="stacks">
         <div className="lg:hidden grid items-center col-span-2 grid-cols-[1fr_auto] gap-4 mb-12">
           <span className="inline-block h-[1.5px] bg-current opacity-50 transition-all duration-300 w-full" />
           <h2

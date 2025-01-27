@@ -101,9 +101,9 @@ export const navSections = [
 
 export const desSections = [
     { id: 'desktop-about', label: 'About' },
-    { id: 'desktop-experience', label: 'Experience' },
-    { id: 'desktop-project', label: 'Projects' },
-    { id: 'desktop-stack', label: 'Stacks' },
+    { id: 'desktop-experiences', label: 'Experience' },
+    { id: 'desktop-projects', label: 'Projects' },
+    { id: 'desktop-stacks', label: 'Stacks' },
     { id: 'desktop-now', label: 'Now' },
     { id: 'desktop-contact', label: 'Contact' }
 ];
