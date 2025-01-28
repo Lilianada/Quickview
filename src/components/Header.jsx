@@ -1,14 +1,13 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { navSections, desSections } from "../utils/data";
 import ThemeToggleButton from "./ThemeToggleButton";
 import { useTheme } from "../context/ThemeContext";
 import PurchaseButton from "./PurchaseButton";
-import Scrollbar from "smooth-scrollbar";
 
 const Header = () => {
   const { theme } = useTheme();
-    const scrollContainer = useRef(null);
+  
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
   const [activeSection, setActiveSection] = useState("about");
   const [activeDesSection, setActiveDesSection] = useState("desktop-about");
